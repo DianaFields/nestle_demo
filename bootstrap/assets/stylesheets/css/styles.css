@@ -12,4 +12,10 @@ header .header1 {
   background: black;
   color: white; }
 
+@font-face {
+  font-family: 'NescafeSans-Bold';
+  src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*# sourceMappingURL=styles.css.map */

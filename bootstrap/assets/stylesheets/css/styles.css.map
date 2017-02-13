@@ -1,7 +1,12 @@
 {
 "version": 3,
+<<<<<<< HEAD
 "mappings": "AACC,SAAE;EACD,OAAO,EAAE,YAAY;EACrB,UAAU,EAAE,IAAI;AAEjB,eAAQ;EACR,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK;;ACPb,WAAW;EACV,KAAK,EAAC,GAAG;;ACDV,QAAQ;EACP,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK",
 "sources": ["../scss/header.scss","../scss/solucion.scss","../scss/checkout.scss"],
+=======
+"mappings": "AACC,eAAQ;EACR,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK;;ACHb,WAAW;EACV,KAAK,EAAC,GAAG;;ACDV,QAAQ;EACP,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK;;ACFb,UAKC;EAJC,WAAW,EAAE,kBAAkB;EAC/B,GAAG,EAAE,uNAAyN;EAC9N,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM",
+"sources": ["../scss/header.scss","../scss/solucion.scss","../scss/checkout.scss","../scss/general.scss"],
+>>>>>>> master
 "names": [],
 "file": "styles.css"
 }
