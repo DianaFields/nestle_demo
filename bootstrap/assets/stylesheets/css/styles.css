@@ -1,46 +1,22 @@
-/*
-Error: Invalid CSS after "...alledeProducto"": expected "{", was ";"
-        on line 10 of scss/styles.scss
+.header1 {
+  background: black;
+  color: white; }
 
-5: @import "header";
-6: @import "footer";
-7: @import "solucion";
-8: @import "checkout";
-9: <<<<<<< HEAD
-10: @import "DetalledeProducto";
-11: @import "DetalledeCarrito";
-12: =======
-13: @import "general";
-14: >>>>>>> 317ba3b154a75c055ad982f66f46acb7ff205c8a
+header .header1 {
+  background: black;
+  color: white; }
 
-Backtrace:
-scss/styles.scss:10
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...alledeProducto\"\": expected \"{\", was \";\"\A         on line 10 of scss/styles.scss\A \A 5: @import \"header\";\A 6: @import \"footer\";\A 7: @import \"solucion\";\A 8: @import \"checkout\";\A 9: <<<<<<< HEAD\A 10: @import \"DetalledeProducto\";\A 11: @import \"DetalledeCarrito\";\A 12: =======\A 13: @import \"general\";\A 14: >>>>>>> 317ba3b154a75c055ad982f66f46acb7ff205c8a"; }
+.claseNueva {
+  color: red; }
+
+.header1 {
+  background: black;
+  color: white; }
+
+@font-face {
+  font-family: 'NescafeSans-Bold';
+  src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=styles.css.map */
