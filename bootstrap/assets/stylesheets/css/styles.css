@@ -3,10 +3,12 @@ header .header1 {
   color: white; }
 
 .solutionsTop {
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8; }
   .solutionsTop .item {
     width: 24%;
-    display: inline-block; }
+    display: inline-block;
+    text-align: center; }
     .solutionsTop .item .logo {
       height: 70px;
       vertical-align: middle;
@@ -17,28 +19,68 @@ header .header1 {
     .solutionsTop .title table {
       color: #ff0000; }
     .solutionsTop .title p {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'NescafeSans-Bold';
       font-weight: bold;
       font-size: 25px;
       color: #e1261c; }
 
-.solutionMain table {
-  width: 100%;
-  border-spacing: 2px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 16px; }
-  .solutionMain table tr {
-    background: #f5f5f5; }
-  .solutionMain table th {
-    padding: 6px;
-    width: 28%;
-    font-weight: normal; }
-  .solutionMain table .title {
-    width: 18%; }
+.solutionMain {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .solutionMain table {
+    width: 100%;
+    border-spacing: 2px;
+    font-weight: normal;
+    font-size: 16px; }
+    .solutionMain table tr {
+      background: #f5f5f5; }
+    .solutionMain table th {
+      padding: 6px;
+      width: 28%;
+      font-weight: normal; }
+    .solutionMain table .title {
+      width: 18%; }
+  .solutionMain .toolNav {
+    text-align: right; }
+    .solutionMain .toolNav a {
+      color: #e1261c;
+      text-decoration: none;
+      text-align: right;
+      font-size: 16px;
+      line-height: 50px; }
+  .solutionMain button {
+    background: #e1261c;
+    width: 300px;
+    color: #fff; }
 
 .white-back {
   background: #fff; }
+
+.division {
+  width: 100%;
+  height: 30px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,000000+100&0.65+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(234, 234, 234, 0.65) 0%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(234, 234, 234, 0.65) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(234, 234, 234, 0.65) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6eaeaea', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */ }
+
+.gradientDiv {
+  display: inline-block;
+  width: 2px;
+  height: 300px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a0a0a0+2,000000+100&0.65+0,0+71 */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(160, 160, 160, 0.65) 0%, rgba(160, 160, 160, 0.63) 2%, rgba(47, 47, 47, 0) 71%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(160, 160, 160, 0.65) 0%, rgba(160, 160, 160, 0.63) 2%, rgba(47, 47, 47, 0) 71%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(160, 160, 160, 0.65) 0%, rgba(160, 160, 160, 0.63) 2%, rgba(47, 47, 47, 0) 71%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a0a0a0', endColorstr='#00000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
 
 .header1 {
   background: black;
