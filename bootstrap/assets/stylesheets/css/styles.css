@@ -12,4 +12,8 @@ importar aquí sus hojas de estilo, ejemplo con scss/hoja_de_estilo.scss
 .claseNueva {
   color: red; }
 
+.header1 {
+  background: black;
+  color: white; }
+
 /*# sourceMappingURL=styles.css.map */
