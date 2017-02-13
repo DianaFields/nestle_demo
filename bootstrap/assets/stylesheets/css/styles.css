@@ -5,6 +5,10 @@ importar aquí sus hojas de estilo, ejemplo con scss/hoja_de_estilo.scss
 @import "hoja_de_estilo";
 
 */
+.header1 {
+  background: black;
+  color: white; }
+
 /*
 Hoja de estilos para proyecto demo Nestle. Sección: Detalle de Producto;
 
