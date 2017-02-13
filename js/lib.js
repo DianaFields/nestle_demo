@@ -197,7 +197,6 @@ var utils = {
 
 }
 
-
 function loadSection(seccion){
 
     ajaxData('secciones/' + seccion,'GET',{},false,function(e){
