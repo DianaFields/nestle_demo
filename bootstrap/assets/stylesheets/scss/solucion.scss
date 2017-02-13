@@ -42,19 +42,22 @@ $red-nescafe: #e1261c;
 			padding: 6px;
 			width: 28%;
 			font-weight: normal;
+			text-align: center;
 		}
 		.title{
 			width: 18%;
 		}
 	}
 	.toolNav{
-		text-align: right;
 		a{
 			color: $red-nescafe;
 			text-decoration: none;
 			text-align: right;
 			font-size: 16px;
 			line-height: 50px;
+		}
+		i{
+			color: $red-nescafe;
 		}
 
 	}
@@ -73,6 +76,12 @@ $red-nescafe: #e1261c;
 }
 .white-back{
 	background: $white-color;
+}
+.toolRight{
+	text-align: right;
+}
+.toolCenter{
+	text-align: center;
 }
 .division{
 	width: 100%;

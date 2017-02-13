@@ -36,17 +36,18 @@ header .header1 {
     .solutionMain table th {
       padding: 6px;
       width: 28%;
-      font-weight: normal; }
+      font-weight: normal;
+      text-align: center; }
     .solutionMain table .title {
       width: 18%; }
-  .solutionMain .toolNav {
-    text-align: right; }
-    .solutionMain .toolNav a {
-      color: #e1261c;
-      text-decoration: none;
-      text-align: right;
-      font-size: 16px;
-      line-height: 50px; }
+  .solutionMain .toolNav a {
+    color: #e1261c;
+    text-decoration: none;
+    text-align: right;
+    font-size: 16px;
+    line-height: 50px; }
+  .solutionMain .toolNav i {
+    color: #e1261c; }
   .solutionMain button {
     background: #e1261c;
     width: 224px;
@@ -60,6 +61,12 @@ header .header1 {
 
 .white-back {
   background: #fff; }
+
+.toolRight {
+  text-align: right; }
+
+.toolCenter {
+  text-align: center; }
 
 .division {
   width: 100%;
