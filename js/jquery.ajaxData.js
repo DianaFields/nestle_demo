@@ -109,7 +109,7 @@
             success     : function( response ) {
 
                 try {
-                    _json = response.toString().parseJSON();
+                    _json = response.toString();
 
                     if (callback && typeof(callback) === "function") {
                         callback.apply( this, [ _json ] );
