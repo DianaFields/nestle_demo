@@ -1,3 +1,5 @@
+.DS_Store
+.idea/
 
 <<<<<<< HEAD
 bootstrap/assets/stylesheets/css/styles.css.map
@@ -14,3 +16,5 @@ nbproject/project.xml
 nbproject/project.properties
 
 nbproject/private/private.properties
+
+bootstrap/assets/stylesheets/css/styles.css.map
