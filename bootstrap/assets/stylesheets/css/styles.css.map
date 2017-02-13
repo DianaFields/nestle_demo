@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACC,eAAQ;EACR,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK;;ACHb,WAAW;EACV,KAAK,EAAC,GAAG;;ACDV,QAAQ;EACP,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK",
+"mappings": "AACC,SAAE;EACD,OAAO,EAAE,YAAY;EACrB,UAAU,EAAE,IAAI;AAEjB,eAAQ;EACR,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK;;ACPb,WAAW;EACV,KAAK,EAAC,GAAG;;ACDV,QAAQ;EACP,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK",
 "sources": ["../scss/header.scss","../scss/solucion.scss","../scss/checkout.scss"],
 "names": [],
 "file": "styles.css"
