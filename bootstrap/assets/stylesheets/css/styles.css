@@ -49,8 +49,14 @@ header .header1 {
       line-height: 50px; }
   .solutionMain button {
     background: #e1261c;
-    width: 300px;
-    color: #fff; }
+    width: 224px;
+    height: 46px;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'NescafeSans-Bold'; }
 
 .white-back {
   background: #fff; }

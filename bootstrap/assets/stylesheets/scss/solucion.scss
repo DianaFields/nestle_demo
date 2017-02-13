@@ -60,8 +60,15 @@ $red-nescafe: #e1261c;
 	}
 	button{
 		background: $red-nescafe;
-		width: 300px;
+		width: 224px;
+		height: 46px;
+		outline: none;
 		color: #fff;
+		border:none;
+		border-radius: 10px;
+		font-size: 15px;
+		font-family: 'NescafeSans-Bold';
+
 	}
 }
 .white-back{
