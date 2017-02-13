@@ -1,10 +1,10 @@
-@charset "UTF-8";
-/*
-importar aquí sus hojas de estilo, ejemplo con scss/hoja_de_estilo.scss
+header .header1 {
+  background: black;
+  color: white; }
 
-@import "hoja_de_estilo";
+.claseNueva {
+  color: red; }
 
-*/
 .header1 {
   background: black;
   color: white; }
