@@ -13,6 +13,17 @@ header .header1 {
   background: black;
   color: white; }
 
+.catalog-category-view .col-md-10 .page-container .breadcrumb {
+  padding: 0 0;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 0;
+  font-family: 'Helvetica Neue'; }
+  .catalog-category-view .col-md-10 .page-container .breadcrumb li {
+    display: inline-block; }
+    .catalog-category-view .col-md-10 .page-container .breadcrumb li a {
+      text-decoration: none; }
+
 @font-face {
   font-family: 'NescafeSans-Bold';
   src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");

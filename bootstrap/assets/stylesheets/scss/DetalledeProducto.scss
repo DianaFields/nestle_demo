@@ -1,3 +1,22 @@
 // ----------------------------------------------
 // Entrepids
 //Hoja de estilos para proyecto demo Nestle. Sección: Detalle de Producto;
+.catalog-category-view{
+	.col-md-10{
+		.page-container{
+			.breadcrumb{
+				padding: 0 0;
+			    list-style: none;
+			    background-color: #fff;
+			    border-radius: 0;
+			    font-family: 'Helvetica Neue';
+			    li{
+			    	display: inline-block;
+			    	a{
+			    		text-decoration: none;
+			    	}
+			    }
+			}
+		}
+	}
+}
