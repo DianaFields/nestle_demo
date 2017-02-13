@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";AAEA;;;;;EAKE;ACPF,QAAQ;EACP,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK",
-"sources": ["../scss/styles.scss","../scss/home.scss"],
+"mappings": ";AAEA;;;;;EAKE;ACPF,QAAQ;EACP,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK;;ACFb,WAAW;EACV,KAAK,EAAC,GAAG;;ACDV,QAAQ;EACP,UAAU,EAAC,KAAK;EAChB,KAAK,EAAE,KAAK",
+"sources": ["../scss/styles.scss","../scss/home.scss","../scss/solucion.scss","../scss/checkout.scss"],
 "names": [],
 "file": "styles.css"
 }
