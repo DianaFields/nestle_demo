@@ -1,47 +1,48 @@
 <!--INICIO DE SECCION -->
 	<section>
-
             <div class="main-container col2-right-layout">
                 <div class="main">
                     <div class="col-main">
                         <div class="page-title">
                             <h1>Registro de Pago</h1>
                         </div>
-                        <script type="text/javascript" src="./Boutique_files/accordion.js"></script>
-                        <script type="text/javascript" src="./Boutique_files/opcheckout.js"></script>
-                        <script type="text/javascript" src="./Boutique_files/opcheckout_rwd.js"></script>
                         <ol class="opc opc-firststep-billing" id="checkoutSteps">
                             <li id="opc-billing" class="section allow active">
                                 <div class="step-title">
                                     <span class="number">1</span>
                                     <h2>Información de envío</h2>
-                                    <a href="http://lefort.local/index.php/checkout/onepage/#">Modificar</a>
+                                    <a href="#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-billing" class="step a-item">
-                                    <form id="co-billing-form" action="http://lefort.local/index.php/checkout/onepage/">
+                                <div id="checkout-step-billing" class="step a-item" style="">
+                                    <form id="co-billing-form" action="">
                                         <div class="fieldset">
                                             <p class="required">* Campos Requeridos</p>
                                             <ul class="form-list">
                                                 <li class="wide">
                                                     <label for="billing-address-select">Selecciones una dirección de envío de su libreta de direcciones o ingrese una nueva</label>
                                                     <div class="input-box">
-                                                        <select name="billing_address_id" id="billing-address-select" class="address-select" title="" onchange="billing.newAddress(!this.value)"><option value="3" selected="selected">karen reyes, anastacio bustamente asdfg, mexico , izatalapapa 03020, México</option><option value="">Nuevas direcciones</option></select>            </div>
+                                                        <select name="billing_address_id" id="billing-address-select" class="address-select" title="" >
+                                                            <option value="1">Karen Reyes, CARLOS SANTAN 100, VENUSTIANO CARRANZA, Distrito Federal 15500, México</option>
+                                                            <option value="2" selected="selected">Karen Reyes, RET 9 FCO DEL PASO Y TRONCOSO, VENUSTIANO CARRANZA, Distrito Federal 15900, México</option>
+                                                            <option value="">Nuevas direcciones</option>
+                                                        </select>
+                                                    </div>
                                                 </li>
-                                                <li id="billing-new-address-form" style="" class="scaffold-form">
+                                                <li id="billing-new-address-form" class="scaffold-form">
                                                     <div class="fieldset">
-                                                        <input type="hidden" name="billing[address_id]" value="49" id="billing:address_id">
+                                                        <input name="billing[address_id]" value="31" id="billing:address_id" type="hidden">
                                                         <ul>
                                                             <li class="fields"><div class="customer-name">
                                                                     <div class="field name-firstname">
                                                                         <label for="billing:firstname" class="required"><em>*</em>Nombre</label>
                                                                         <div class="input-box">
-                                                                            <input type="text" id="billing:firstname" name="billing[firstname]" value="karen" title="Nombre" maxlength="255" class="input-text required-entry">
+                                                                            <input id="billing:firstname" name="billing[firstname]" value="Karen" title="Nombre" maxlength="255" class="input-text required-entry" type="text">
                                                                         </div>
                                                                     </div>
                                                                     <div class="field name-lastname">
                                                                         <label for="billing:lastname" class="required"><em>*</em>Apellido</label>
                                                                         <div class="input-box">
-                                                                            <input type="text" id="billing:lastname" name="billing[lastname]" value="reyes" title="Apellido" maxlength="255" class="input-text required-entry">
+                                                                            <input id="billing:lastname" name="billing[lastname]" value="Reyes" title="Apellido" maxlength="255" class="input-text required-entry" type="text">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -50,49 +51,44 @@
                                                                 <div class="field">
                                                                     <label for="billing:company">Compañía</label>
                                                                     <div class="input-box">
-                                                                        <input type="text" id="billing:company" name="billing[company]" value="" title="Compañía" class="input-text ">
+                                                                        <input id="billing:company" name="billing[company]" value="" title="Compañía" class="input-text " type="text">
                                                                     </div>
                                                                 </div>
                                                             </li>
                                                             <li class="wide">
                                                                 <label for="billing:street1" class="required"><em>*</em>Dirección</label>
                                                                 <div class="input-box">
-                                                                    <input type="text" title="Calle" name="billing[street][]" id="billing:street1" value="anastacio bustamente" class="input-text  required-entry">
+                                                                    <input title="Calle" name="billing[street][]" id="billing:street1" value="RET 9 FCO DEL PASO Y TRONCOSO" class="input-text  required-entry" type="text">
                                                                 </div>
                                                             </li>
                                                             <li class="wide">
                                                                 <label for="billing:street2">Street Address 2</label>
                                                                 <div class="input-box">
-                                                                    <input type="text" title="Street Address 2" name="billing[street][]" id="billing:street2" value="asdfg" class="input-text ">
+                                                                    <input title="Street Address 2" name="billing[street][]" id="billing:street2" value="" class="input-text " type="text">
                                                                 </div>
                                                             </li>
                                                             <li class="fields">
                                                                 <div class="field">
                                                                     <label for="billing:city" class="required"><em>*</em>Ciudad</label>
                                                                     <div class="input-box">
-                                                                        <input type="text" title="Ciudad" name="billing[city]" value="mexico " class="input-text  required-entry" id="billing:city">
+                                                                        <input title="Ciudad" name="billing[city]" value="VENUSTIANO CARRANZA" class="input-text  required-entry" id="billing:city" type="text">
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
-                                                                    <label for="billing:region_id" class="required"><em>*</em>Estado/Provincia</label>
+                                                                    <label class="required"><em style="">*</em>Estado/Provincia</label>
                                                                     <div class="input-box">
-                                                                        <select id="billing:region_id" name="billing[region_id]" title="Estado/Provincia" class="validate-select required-entry" style="" defaultvalue="">
+                                                                        <select  title="Estado/Provincia" class="validate-select required-entry" >
                                                                             <option value="">Por favor seleccione la región, estado o provincia</option>
                                                                         </select>
-                                                                        <script type="text/javascript">
-                                                                            //<![CDATA[
-                                                                            $('billing:region_id').setAttribute('defaultValue', "");
-                                                                            //]]>
-                                                                        </script>
-                                                                        <input type="text" id="billing:region" name="billing[region]" value="izatalapapa" title="Estado/Provincia" class="input-text required-entry">
+                                                                        <input id="billing:region" name="billing[region]" value="Distrito Federal" title="Estado/Provincia" class="input-text required-entry" style="" type="text">
                                                                     </div>
                                                                 </div>
                                                             </li>
                                                             <li class="fields">
                                                                 <div class="field">
-                                                                    <label for="billing:postcode" class="required"><em style="display: none;">*</em>C.P./Código Postal</label>
+                                                                    <label for="billing:postcode" class="required"><em style="">*</em>C.P./Código Postal</label>
                                                                     <div class="input-box">
-                                                                        <input type="text" title="C.P./Código Postal" name="billing[postcode]" id="billing:postcode" value="03020" class="input-text validate-zip-international">
+                                                                        <input title="C.P./Código Postal" name="billing[postcode]" id="billing:postcode" value="15900" class="input-text validate-zip-international" type="text">
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
@@ -105,224 +101,108 @@
                                                                 <div class="field">
                                                                     <label for="billing:telephone" class="required"><em>*</em>Teléfono</label>
                                                                     <div class="input-box">
-                                                                        <input type="tel" name="billing[telephone]" value="5555555555" title="Teléfono" class="input-text  required-entry" id="billing:telephone">
+                                                                        <input name="billing[telephone]" value="5528536393" title="Teléfono" class="input-text  required-entry" id="billing:telephone" type="tel">
                                                                     </div>
                                                                 </div>
                                                                 <div class="field">
                                                                     <label for="billing:fax">Fax</label>
                                                                     <div class="input-box">
-                                                                        <input type="tel" name="billing[fax]" value="" title="Fax" class="input-text " id="billing:fax">
+                                                                        <input name="billing[fax]" value="" title="Fax" class="input-text " id="billing:fax" type="tel">
                                                                     </div>
                                                                 </div>
                                                             </li>
 
                                                             <li class="control">
-                                                                <input type="checkbox" name="billing[save_in_address_book]" value="1" title="Guardar en libro de direcciones" id="billing:save_in_address_book" onchange="if (window.shipping) shipping.setSameAsBilling(false);" class="checkbox"><label for="billing:save_in_address_book">Guardar en libro de direcciones</label>
+                                                                <input name="billing[save_in_address_book]" value="1" title="Guardar en libro de direcciones" id="billing:save_in_address_book" class="checkbox" type="checkbox"><label for="billing:save_in_address_book">Guardar en libro de direcciones</label>
                                                             </li>
                                                         </ul>
                                                         <div class="remember-me-popup">
                                                             <div class="remember-me-popup-head">
                                                                 <h3>What's this?</h3>
-                                                                <a href="http://lefort.local/index.php/checkout/onepage/#" class="remember-me-popup-close" title="Cerrar">Cerrar</a>
+                                                                <a href="#" class="remember-me-popup-close" title="Cerrar">Cerrar</a>
                                                             </div>
                                                             <div class="remember-me-popup-body">
                                                                 <p>Checking "Remember Me" will let you access your shopping cart on this computer when you are logged out</p>
                                                                 <div class="remember-me-popup-close-button a-right">
-                                                                    <a href="http://lefort.local/index.php/checkout/onepage/#" class="remember-me-popup-close button" title="Cerrar"><span>Cerrar</span></a>
+                                                                    <a href="#" class="remember-me-popup-close button" title="Cerrar"><span>Cerrar</span></a>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <script type="text/javascript">
-                                                        //<![CDATA[
-                                                            function toggleRememberMePopup() {
-                                                            var formParent = jQuery(this).parents('form:first');
-                                                            formParent.find('.remember-me-box a').toggleClass('hide');
-                                                            formParent.find('.remember-me-popup').toggleClass('show');
-                                                            return false;
-                                                            }
-                                                            var rememberMeToggleSetup = false;
-                                                            jQuery(document).ready(function(){
-                                                            if (!rememberMeToggleSetup) {
-                                                            jQuery('.remember-me-box a, .remember-me-popup a').on('click', toggleRememberMePopup);
-                                                            rememberMeToggleSetup = true;
-                                                            }
-                                                            });
-                                                        //]]>
-                                                        </script>
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <input type="hidden" name="billing[use_for_shipping]" value="1">
+                                            <input name="billing[use_for_shipping]" value="1" type="hidden">
                                             <div class="buttons-set" id="billing-buttons-container">
-                                                <button type="button" title="Continuar" class="button" onclick="billing.save()"><span><span>Continuar</span></span></button>
-                                                <span class="please-wait" id="billing-please-wait" style="">
-                                                    <img src="./Boutique_files/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...        </span>
+                                                <button type="button" title="Continuar" class="button"><span><span>Continuar</span></span></button>
+                                                <span class="please-wait" id="billing-please-wait" >
+                                                    <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...</span>
                                             </div>
                                         </div>
                                     </form>
-                                    <script type="text/javascript">
-                                    //<![CDATA[
-                                        var billing = new Billing('co-billing-form', 'http://lefort.local/index.php/checkout/onepage/getAddress/address/', 'http://lefort.local/index.php/checkout/onepage/saveBilling/');
-                                        var billingForm = new VarienForm('co-billing-form');
-                                        //billingForm.setElementsRelation('billing:country_id', 'billing:region', 'http://lefort.local/index.php/directory/json/childRegion/', 'Seleccionar el Estado/Provincia...');
-                                        $('billing-address-select') && billing.newAddress(!$('billing-address-select').value);
-                                        var billingRegionUpdater = new RegionUpdater('billing:country_id', 'billing:region', 'billing:region_id', {"config":{"show_all_regions":true, "regions_required":["MX"]}}, undefined, 'billing:postcode');
-                                        if ($('onepage-guest-register-button')) {
-                                        Event.observe($('onepage-guest-register-button'), 'click', function(event) {
-                                        var billingRememberMe = $('co-billing-form').select('#remember-me-box');
-                                        if (billingRememberMe.length > 0) {
-                                        if ($('login:guest') && $('login:guest').checked) {
-                                        billingRememberMe[0].hide();
-                                        } else if ($('login:register') && ($('login:register').checked || $('login:register').type == 'hidden')) {
-                                        billingRememberMe[0].show();
-                                        }
-                                        }
-                                        });
-                                        }
-                                    //]]>
-                                    </script>
                                 </div>
                             </li>
                             <li id="opc-shipping_method" class="section">
                                 <div class="step-title">
                                     <span class="number">2</span>
                                     <h2>Método de envío</h2>
-                                    <a href="http://lefort.local/index.php/checkout/onepage/#">Modificar</a>
+                                    <a href="#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-shipping_method" class="step a-item" style="">
-                                    <form id="co-shipping-method-form" action="http://lefort.local/index.php/checkout/onepage/">
+                                <div id="checkout-step-shipping_method" class="step a-item" >
+                                    <form id="co-shipping-method-form" action="">
                                         <div id="checkout-shipping-method-load">
-                                            <!-- Content loaded dynamically -->
+
                                         </div>
-                                        <script type="text/javascript">
-                                            //<![CDATA[
-                                            var shippingMethod = new ShippingMethod('co-shipping-method-form', "http://lefort.local/index.php/checkout/onepage/saveShippingMethod/");
-                                            //]]>
-                                        </script>
                                         <div id="onepage-checkout-shipping-method-additional-load">
-                                            <script type="text/javascript">
-                                //<![CDATA[
-                                                if (!window.toogleVisibilityOnObjects) {
-                                                var toogleVisibilityOnObjects = function(source, objects) {
-                                                if ($(source) && $(source).checked) {
-                                                objects.each(function(item){
-                                                $(item).show();
-                                                $$('#' + item + ' .input-text').each(function(item) {
-                                                item.removeClassName('validation-passed');
-                                                });
-                                                });
-                                                } else {
-                                                objects.each(function(item){
-                                                if ($(item)) {
-                                                $(item).hide();
-                                                $$('#' + item + ' .input-text').each(function(sitem) {
-                                                sitem.addClassName('validation-passed');
-                                                });
-                                                $$('#' + item + ' .giftmessage-area').each(function(sitem) {
-                                                sitem.value = '';
-                                                });
-                                                $$('#' + item + ' .checkbox').each(function(sitem) {
-                                                sitem.checked = false;
-                                                });
-                                                $$('#' + item + ' .select').each(function(sitem) {
-                                                sitem.value = '';
-                                                });
-                                                $$('#' + item + ' .price-box').each(function(sitem) {
-                                                sitem.addClassName('no-display');
-                                                });
-                                                }
-                                                });
-                                                }
-                                                }
-                                                }
-
-                                                if (!window.toogleRequired) {
-                                                var toogleRequired = function (source, objects)
-                                                {
-                                                if (!$(source).value.blank()) {
-                                                objects.each(function(item) {
-                                                $(item).addClassName('required-entry');
-                                                });
-                                                } else {
-                                                objects.each(function(item) {
-                                                if (typeof shippingMethod != 'undefined' && shippingMethod.validator) {
-                                                shippingMethod.validator.reset(item);
-                                                }
-                                                $(item).removeClassName('required-entry');
-                                                });
-                                                }
-                                                }
-                                                }
-                                                if (window.shipping) {
-
-                                                shipping.onSave = function(evt){
-                                                new Ajax.Updater('onepage-checkout-shipping-method-additional-load', 'http://lefort.local/index.php/checkout/onepage/getAdditional/', {onSuccess: function() {
-                                                this.nextStep(evt);
-                                                }.bind(this), evalScripts:true});
-                                                }.bindAsEventListener(shipping);
-                                                billing.onSave = function(evt){
-                                                new Ajax.Updater('onepage-checkout-shipping-method-additional-load', 'http://lefort.local/index.php/checkout/onepage/getAdditional/', {onSuccess: function() {
-                                                this.nextStep(evt);
-                                                }.bind(this), evalScripts:true});
-                                                }.bindAsEventListener(billing);
-                                                }
-                                //]]>
-                                            </script>
                                             <div class="gift-messages">
                                                 <h3>¿Tiene usted algunos artículos de regalo en su pedido?</h3>
                                                 <p class="control">
-                                                    <input type="checkbox" name="allow_gift_messages" id="allow_gift_messages" value="1" onclick="toogleVisibilityOnObjects(this, [ & #39; allow - gift - message - container & #39; ]);" class="checkbox">
+                                                    <input name="allow_gift_messages" id="allow_gift_messages" value="1" class="checkbox" type="checkbox">
                                                     <label for="allow_gift_messages">Add gift options.</label>
                                                 </p>
                                             </div>
-                                            <div class="gift-messages-form" id="allow-gift-message-container" style="display: none;">
+                                            <div class="gift-messages-form" id="allow-gift-message-container" style="">
                                                 <div class="inner-box">
                                                     <h4>Gift Options for Individual Items</h4>
                                                     <p>
-                                                        <input type="checkbox" name="allow_gift_messages_for_items" id="allow_gift_messages_for_items" value="1" onclick="toogleVisibilityOnObjects(this, [ & #39; allow - gift - messages - for - items - container & #39; ]);" class="checkbox">
+                                                        <input name="allow_gift_messages_for_items" id="allow_gift_messages_for_items" value="1"  class="checkbox" type="checkbox">
                                                         <label for="allow_gift_messages_for_items">Add gift options for Individual Items</label>
                                                     </p>
-                                                    <div id="allow-gift-messages-for-items-container" style="display: none;">
+                                                    <div id="allow-gift-messages-for-items-container" style="">
                                                         <p>You can leave this box blank if you do not wish to add a gift message for the item.</p>
                                                         <ol>
                                                             <li class="item">
                                                                 <div class="product-img-box">
                                                                     <p class="product-image">
-                                                                        <img src="./Boutique_files/img_9872_1(1).jpg" width="75" height="75" alt="Arreglo floral primavera" title="Arreglo floral primavera">
+                                                                        <img src="../bootstrap/assets/images/checkout/melody3.jpg" alt="Cafetera" title="CAfetera" width="75" height="75">
                                                                     </p>
                                                                     <p class="number">Artículo 1 de 1</p>
                                                                 </div>
                                                                 <div class="details">
                                                                     <div class="f-fix">
-                                                                        <h5 class="product-name">Arreglo floral primavera</h5>
-                                                                        <input type="hidden" name="giftmessage[26][type]" value="quote_item">
+                                                                        <h5 class="product-name">Melody 3</h5>
+                                                                        <input name="giftmessage[18][type]" value="quote_item" type="hidden">
                                                                         <ul class="form-list">
                                                                             <li class="fields">
                                                                                 <div class="field">
-                                                                                    <label for="gift-message-26-from">De</label>
+                                                                                    <label for="gift-message-18-from">De</label>
                                                                                     <div class="input-box">
-                                                                                        <input type="text" name="giftmessage[26][from]" id="gift-message-26-from" title="De" value="karen reyes" class="input-text validation-passed">
+                                                                                        <input name="giftmessage[18][from]" id="gift-message-18-from" title="De" value="Karen Reyes" class="input-text validation-passed" type="text">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="field">
-                                                                                    <label for="gift-message-26-to">Para</label>
+                                                                                    <label for="gift-message-18-to">Para</label>
                                                                                     <div class="input-box">
-                                                                                        <input type="text" name="giftmessage[26][to]" id="gift-message-26-to" title="Para" value="karen reyes" class="input-text validation-passed">
+                                                                                        <input name="giftmessage[18][to]" id="gift-message-18-to" title="Para" value="Karen Reyes" class="input-text validation-passed" type="text">
                                                                                     </div>
                                                                                 </div>
                                                                             </li>
                                                                             <li class="wide">
-                                                                                <label for="gift-message-26-message">Mensaje</label>
+                                                                                <label for="gift-message-18-message">Mensaje</label>
                                                                                 <div class="input-box">
-                                                                                    <textarea id="gift-message-26-message" onchange="toogleRequired( & #39; gift - message - 26 - message & #39; , [ & #39; gift - message - 26 - from & #39; , & #39; gift - message - 26 - to & #39; ])" class="input-text giftmessage-area validation-passed" name="giftmessage[26][message]" title="Mensaje" rows="5" cols="40"></textarea>
+                                                                                    <textarea id="gift-message-18-message" onchange="toogleRequired('gift-message-18-message', ['gift-message-18-from', 'gift-message-18-to'])" class="input-text giftmessage-area validation-passed" name="giftmessage[18][message]" title="Mensaje" rows="5" cols="40"></textarea>
                                                                                 </div>
                                                                             </li>
                                                                         </ul>
-                                                                        <script type="text/javascript">
-                                                                            //<![CDATA[
-                                                                            toogleRequired('gift-message-26-message', ['gift-message-26-from', 'gift-message-26-to']);
-                                                                            //]]>
-                                                                        </script>
                                                                     </div>
                                                                 </div>
                                                             </li>
@@ -330,19 +210,14 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <script type="text/javascript">
-                                                //<![CDATA[
-                                                toogleVisibilityOnObjects('allow_gift_messages', ['allow-gift-message-container']);
-                                                toogleVisibilityOnObjects('allow_gift_messages_for_order', ['allow-gift-messages-for-order-container']);
-                                                toogleVisibilityOnObjects('allow_gift_messages_for_items', ['allow-gift-messages-for-items-container']);
-                                                //]]>
-                                            </script>
                                         </div>
                                         <div class="buttons-set" id="shipping-method-buttons-container">
-                                            <p class="back-link"><a href="http://lefort.local/index.php/checkout/onepage/#" onclick="checkout.back(); return false;"><small>« </small>Regresar</a></p>
-                                            <button type="button" class="button" onclick="shippingMethod.save()"><span><span>Continuar</span></span></button>
-                                            <span id="shipping-method-please-wait" class="please-wait" style="">
-                                                <img src="./Boutique_files/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...        </span>
+                                            <p class="back-link"><a href="#" ><small>« </small>Regresar</a></p>
+                                            <button type="button" class="button" ><span><span>Continuar</span></span></button>
+                                            <span id="shipping-method-please-wait" class="please-wait" >
+                                                <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> 
+                                                Cargando el siguiente paso...        
+                                            </span>
                                         </div>
                                     </form>
                                 </div>
@@ -351,114 +226,68 @@
                                 <div class="step-title">
                                     <span class="number">3</span>
                                     <h2>Información de Pago</h2>
-                                    <a href="http://lefort.local/index.php/checkout/onepage/#">Modificar</a>
+                                    <a href="#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-payment" class="step a-item" style="">
-                                    <script type="text/javascript">
-                        //<![CDATA[
-                                        var quoteBaseGrandTotal = 400;
-                                        var checkQuoteBaseGrandTotal = quoteBaseGrandTotal;
-                                        var quoteGrandTotalClean = quoteBaseGrandTotal;
-                                        var payment = new Payment('co-payment-form', 'http://lefort.local/index.php/checkout/onepage/savePayment/');
-                                        var lastPrice;
-                        //]]>
-                                    </script>
-                                    <form action="http://lefort.local/index.php/checkout/onepage/" id="co-payment-form">
+                                <div id="checkout-step-payment" class="step a-item" >
+                                    <form action="" id="co-payment-form">
                                         <div class="fieldset">
                                             <dl class="sp-methods" id="checkout-payment-method-load">
                                                 <!-- Content dynamically loaded. Content from the methods.phtml is loaded during the ajax call -->
                                             </dl>
                                         </div>
                                     </form>
-                                    <div class="tool-tip" id="payment-tool-tip" style="">
-                                        <div class="btn-close"><a href="http://lefort.local/index.php/checkout/onepage/#" id="payment-tool-tip-close" title="Cerrar">Cerrar</a></div>
-                                        <div class="tool-tip-content"><img src="./Boutique_files/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
+                                    <div class="tool-tip" id="payment-tool-tip" >
+                                        <div class="btn-close"><a href="#" id="payment-tool-tip-close" title="Cerrar">Cerrar</a></div>
+                                        <div class="tool-tip-content"><img src="../bootstrap/assets/images/checkout/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
                                     </div>
                                     <div class="buttons-set" id="payment-buttons-container">
-                                        <p class="back-link"><a href="http://lefort.local/index.php/checkout/onepage/#" onclick="checkout.back(); return false;"><small>« </small>Regresar</a></p>
-                                        <button type="button" class="button" onclick="payment.save()"><span><span>Continuar</span></span></button>
-                                        <span class="please-wait" id="payment-please-wait" style="">
-                                            <img src="./Boutique_files/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
+                                        <p class="back-link"><a href="#" ><small>« </small>Regresar</a></p>
+                                        <button type="button" class="button" ><span><span>Continuar</span></span></button>
+                                        <span class="please-wait" id="payment-please-wait" >
+                                            <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
                                     </div>
-                                    <script type="text/javascript">
-                                    //<![CDATA[
-                                        function toggleToolTip(event){
-                                        if ($('payment-tool-tip')){
-                                        $('payment-tool-tip').setStyle({
-                                        top: (Event.pointerY(event) - 560) + 'px'//,
-                                                //left: (Event.pointerX(event)+100)+'px'
-                                        })
-                                                $('payment-tool-tip').toggle();
-                                        }
-                                        Event.stop(event);
-                                        }
-                                        if ($('payment-tool-tip-close')){
-                                        Event.observe($('payment-tool-tip-close'), 'click', toggleToolTip);
-                                        }
-                                    //]]>
-                                    </script>
-                                    <script type="text/javascript">
-                                    //<![CDATA[
-                                        payment.currentMethod = "";
-                                    //]]>
-                                    </script>
                                 </div>
                             </li>
                             <li id="opc-review" class="section">
                                 <div class="step-title">
                                     <span class="number">4</span>
                                     <h2>Reseña del Pedido</h2>
-                                    <a href="http://lefort.local/index.php/checkout/onepage/#">Modificar</a>
+                                    <a href="#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-review" class="step a-item" style="">
+                                <div id="checkout-step-review" class="step a-item" >
                                     <div class="order-review" id="checkout-review-load">
                                         <!-- Content loaded dynamically -->
                                     </div>
                                 </div>
                             </li>
                         </ol>
-                        <script type="text/javascript">
-                        //<![CDATA[
-                            var accordion = new Accordion('checkoutSteps', '.step-title', true);
-                            accordion.openSection('opc-billing');
-                            var checkout = new Checkout(accordion, {
-                            progress: 'http://lefort.local/index.php/checkout/onepage/progress/',
-                                    review: 'http://lefort.local/index.php/checkout/onepage/review/',
-                                    saveMethod: 'http://lefort.local/index.php/checkout/onepage/saveMethod/',
-                                    failure: 'http://lefort.local/index.php/checkout/cart/'}
-                            );
-                        //]]>
-                        </script>
                     </div>
-                    <div class="col-right sidebar"><div id="checkout-progress-wrapper"><div class="block block-progress opc-block-progress">
+                    <div class="col-right sidebar">
+                        <div id="checkout-progress-wrapper">
+                            <div class="block block-progress opc-block-progress">
                                 <div class="block-title">
                                     <strong><span>El progreso de su pago</span></strong>
                                 </div>
                                 <div class="block-content">
-                                    <dl>
-                                        <div id="billing-progress-opcheckout">
-                                            <dt>
-                                                Direcciones de envío</dt>
-                                        </div>
+                                    <div class="billing-progress-opcheckout">
+                                        Direcciones de envío
+                                    </div>
 
-                                        <div id="shipping-progress-opcheckout">
-                                        </div>
+                                    <div class="shipping-progress-opcheckout">
+                                    </div>
 
-                                        <div id="shipping_method-progress-opcheckout">
-                                            <dt>
-                                                Método de envío</dt>
+                                    <div class="shipping_method-progress-opcheckout">
+                                        Método de envío
+                                    </div>
 
-                                        </div>
-
-                                        <div id="payment-progress-opcheckout">
-                                            <dt>
-                                                Método de pago</dt>
-
-                                        </div>
-                                    </dl>
+                                    <div class="payment-progress-opcheckout">
+                                        Método de pago
+                                    </div>
                                 </div>
-                            </div></div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>	
+            </div>
 	</section>
 <!--FIN DE SECCION -->
