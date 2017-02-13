@@ -1,19 +1,6 @@
-<!doctype html>
- <html>
-
-   <head>
-      <meta charset="utf-8"/>   
-      <title>Nescafé</title>
-      <link rel=stylesheet href="bootstrap/assets/stylesheets/css/styles.css" type="text/css"/>
-      <link rel=stylesheet href="bootstrap/assets/stylesheets/bootstrap.css" type="text/css"/>
-      <script type="text/javascript" src="bootstrap/assets/javascripts/bootstrap.min.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-
-   <body>
 <!--INICIO DE SECCION -->
 	<section>
-	
+
             <div class="main-container col2-right-layout">
                 <div class="main">
                     <div class="col-main">
@@ -40,7 +27,7 @@
                                                     <div class="input-box">
                                                         <select name="billing_address_id" id="billing-address-select" class="address-select" title="" onchange="billing.newAddress(!this.value)"><option value="3" selected="selected">karen reyes, anastacio bustamente asdfg, mexico , izatalapapa 03020, México</option><option value="">Nuevas direcciones</option></select>            </div>
                                                 </li>
-                                                <li id="billing-new-address-form" style="display:none;" class="scaffold-form">
+                                                <li id="billing-new-address-form" style="" class="scaffold-form">
                                                     <div class="fieldset">
                                                         <input type="hidden" name="billing[address_id]" value="49" id="billing:address_id">
                                                         <ul>
@@ -89,13 +76,13 @@
                                                                 <div class="field">
                                                                     <label for="billing:region_id" class="required"><em>*</em>Estado/Provincia</label>
                                                                     <div class="input-box">
-                                                                        <select id="billing:region_id" name="billing[region_id]" title="Estado/Provincia" class="validate-select required-entry" style="display:none;" defaultvalue="">
+                                                                        <select id="billing:region_id" name="billing[region_id]" title="Estado/Provincia" class="validate-select required-entry" style="" defaultvalue="">
                                                                             <option value="">Por favor seleccione la región, estado o provincia</option>
                                                                         </select>
                                                                         <script type="text/javascript">
-                                                                        //<![CDATA[
-                                                                            $('billing:region_id').setAttribute('defaultValue',  "");
-                                                                        //]]>
+                                                                            //<![CDATA[
+                                                                            $('billing:region_id').setAttribute('defaultValue', "");
+                                                                            //]]>
                                                                         </script>
                                                                         <input type="text" id="billing:region" name="billing[region]" value="izatalapapa" title="Estado/Provincia" class="input-text required-entry">
                                                                     </div>
@@ -130,7 +117,7 @@
                                                             </li>
 
                                                             <li class="control">
-                                                                <input type="checkbox" name="billing[save_in_address_book]" value="1" title="Guardar en libro de direcciones" id="billing:save_in_address_book" onchange="if(window.shipping) shipping.setSameAsBilling(false);" class="checkbox"><label for="billing:save_in_address_book">Guardar en libro de direcciones</label>
+                                                                <input type="checkbox" name="billing[save_in_address_book]" value="1" title="Guardar en libro de direcciones" id="billing:save_in_address_book" onchange="if (window.shipping) shipping.setSameAsBilling(false);" class="checkbox"><label for="billing:save_in_address_book">Guardar en libro de direcciones</label>
                                                             </li>
                                                         </ul>
                                                         <div class="remember-me-popup">
@@ -168,7 +155,7 @@
                                             <input type="hidden" name="billing[use_for_shipping]" value="1">
                                             <div class="buttons-set" id="billing-buttons-container">
                                                 <button type="button" title="Continuar" class="button" onclick="billing.save()"><span><span>Continuar</span></span></button>
-                                                <span class="please-wait" id="billing-please-wait" style="display:none;">
+                                                <span class="please-wait" id="billing-please-wait" style="">
                                                     <img src="./Boutique_files/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...        </span>
                                             </div>
                                         </div>
@@ -177,7 +164,7 @@
                                     //<![CDATA[
                                         var billing = new Billing('co-billing-form', 'http://lefort.local/index.php/checkout/onepage/getAddress/address/', 'http://lefort.local/index.php/checkout/onepage/saveBilling/');
                                         var billingForm = new VarienForm('co-billing-form');
-                                    //billingForm.setElementsRelation('billing:country_id', 'billing:region', 'http://lefort.local/index.php/directory/json/childRegion/', 'Seleccionar el Estado/Provincia...');
+                                        //billingForm.setElementsRelation('billing:country_id', 'billing:region', 'http://lefort.local/index.php/directory/json/childRegion/', 'Seleccionar el Estado/Provincia...');
                                         $('billing-address-select') && billing.newAddress(!$('billing-address-select').value);
                                         var billingRegionUpdater = new RegionUpdater('billing:country_id', 'billing:region', 'billing:region_id', {"config":{"show_all_regions":true, "regions_required":["MX"]}}, undefined, 'billing:postcode');
                                         if ($('onepage-guest-register-button')) {
@@ -202,19 +189,19 @@
                                     <h2>Método de envío</h2>
                                     <a href="http://lefort.local/index.php/checkout/onepage/#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-shipping_method" class="step a-item" style="display:none;">
+                                <div id="checkout-step-shipping_method" class="step a-item" style="">
                                     <form id="co-shipping-method-form" action="http://lefort.local/index.php/checkout/onepage/">
                                         <div id="checkout-shipping-method-load">
                                             <!-- Content loaded dynamically -->
                                         </div>
                                         <script type="text/javascript">
-                                        //<![CDATA[
+                                            //<![CDATA[
                                             var shippingMethod = new ShippingMethod('co-shipping-method-form', "http://lefort.local/index.php/checkout/onepage/saveShippingMethod/");
-                                        //]]>
+                                            //]]>
                                         </script>
                                         <div id="onepage-checkout-shipping-method-additional-load">
                                             <script type="text/javascript">
-                                        //<![CDATA[
+                                //<![CDATA[
                                                 if (!window.toogleVisibilityOnObjects) {
                                                 var toogleVisibilityOnObjects = function(source, objects) {
                                                 if ($(source) && $(source).checked) {
@@ -251,20 +238,20 @@
 
                                                 if (!window.toogleRequired) {
                                                 var toogleRequired = function (source, objects)
-                                                        {
-                                                        if (!$(source).value.blank()) {
-                                                        objects.each(function(item) {
-                                                        $(item).addClassName('required-entry');
-                                                        });
-                                                        } else {
-                                                        objects.each(function(item) {
-                                                        if (typeof shippingMethod != 'undefined' && shippingMethod.validator) {
-                                                        shippingMethod.validator.reset(item);
-                                                        }
-                                                        $(item).removeClassName('required-entry');
-                                                        });
-                                                        }
-                                                        }
+                                                {
+                                                if (!$(source).value.blank()) {
+                                                objects.each(function(item) {
+                                                $(item).addClassName('required-entry');
+                                                });
+                                                } else {
+                                                objects.each(function(item) {
+                                                if (typeof shippingMethod != 'undefined' && shippingMethod.validator) {
+                                                shippingMethod.validator.reset(item);
+                                                }
+                                                $(item).removeClassName('required-entry');
+                                                });
+                                                }
+                                                }
                                                 }
                                                 if (window.shipping) {
 
@@ -279,7 +266,7 @@
                                                 }.bind(this), evalScripts:true});
                                                 }.bindAsEventListener(billing);
                                                 }
-                                        //]]>
+                                //]]>
                                             </script>
                                             <div class="gift-messages">
                                                 <h3>¿Tiene usted algunos artículos de regalo en su pedido?</h3>
@@ -344,17 +331,17 @@
                                                 </div>
                                             </div>
                                             <script type="text/javascript">
-                                            //<![CDATA[
+                                                //<![CDATA[
                                                 toogleVisibilityOnObjects('allow_gift_messages', ['allow-gift-message-container']);
                                                 toogleVisibilityOnObjects('allow_gift_messages_for_order', ['allow-gift-messages-for-order-container']);
                                                 toogleVisibilityOnObjects('allow_gift_messages_for_items', ['allow-gift-messages-for-items-container']);
-                                            //]]>
+                                                //]]>
                                             </script>
                                         </div>
                                         <div class="buttons-set" id="shipping-method-buttons-container">
                                             <p class="back-link"><a href="http://lefort.local/index.php/checkout/onepage/#" onclick="checkout.back(); return false;"><small>« </small>Regresar</a></p>
                                             <button type="button" class="button" onclick="shippingMethod.save()"><span><span>Continuar</span></span></button>
-                                            <span id="shipping-method-please-wait" class="please-wait" style="display:none;">
+                                            <span id="shipping-method-please-wait" class="please-wait" style="">
                                                 <img src="./Boutique_files/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...        </span>
                                         </div>
                                     </form>
@@ -366,15 +353,15 @@
                                     <h2>Información de Pago</h2>
                                     <a href="http://lefort.local/index.php/checkout/onepage/#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-payment" class="step a-item" style="display:none;">
+                                <div id="checkout-step-payment" class="step a-item" style="">
                                     <script type="text/javascript">
-                                //<![CDATA[
+                        //<![CDATA[
                                         var quoteBaseGrandTotal = 400;
                                         var checkQuoteBaseGrandTotal = quoteBaseGrandTotal;
                                         var quoteGrandTotalClean = quoteBaseGrandTotal;
                                         var payment = new Payment('co-payment-form', 'http://lefort.local/index.php/checkout/onepage/savePayment/');
                                         var lastPrice;
-                                //]]>
+                        //]]>
                                     </script>
                                     <form action="http://lefort.local/index.php/checkout/onepage/" id="co-payment-form">
                                         <div class="fieldset">
@@ -383,14 +370,14 @@
                                             </dl>
                                         </div>
                                     </form>
-                                    <div class="tool-tip" id="payment-tool-tip" style="display:none;">
+                                    <div class="tool-tip" id="payment-tool-tip" style="">
                                         <div class="btn-close"><a href="http://lefort.local/index.php/checkout/onepage/#" id="payment-tool-tip-close" title="Cerrar">Cerrar</a></div>
                                         <div class="tool-tip-content"><img src="./Boutique_files/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
                                     </div>
                                     <div class="buttons-set" id="payment-buttons-container">
                                         <p class="back-link"><a href="http://lefort.local/index.php/checkout/onepage/#" onclick="checkout.back(); return false;"><small>« </small>Regresar</a></p>
                                         <button type="button" class="button" onclick="payment.save()"><span><span>Continuar</span></span></button>
-                                        <span class="please-wait" id="payment-please-wait" style="display:none;">
+                                        <span class="please-wait" id="payment-please-wait" style="">
                                             <img src="./Boutique_files/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
                                     </div>
                                     <script type="text/javascript">
@@ -423,7 +410,7 @@
                                     <h2>Reseña del Pedido</h2>
                                     <a href="http://lefort.local/index.php/checkout/onepage/#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-review" class="step a-item" style="display:none;">
+                                <div id="checkout-step-review" class="step a-item" style="">
                                     <div class="order-review" id="checkout-review-load">
                                         <!-- Content loaded dynamically -->
                                     </div>
@@ -472,13 +459,6 @@
                                 </div>
                             </div></div></div>
                 </div>
-            </div>
-            
+            </div>	
 	</section>
 <!--FIN DE SECCION -->
-	<footer>
-		
-	</footer>      
-   </body>
-
- </html>
