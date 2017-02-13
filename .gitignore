@@ -1,12 +1,6 @@
 .DS_Store
 .idea/
-
-<<<<<<< HEAD
-bootstrap/assets/stylesheets/css/styles.css.map
-=======
 *.map
->>>>>>> ce01051604096401dbe72e29f871e2dacfea4eca
-
 bootstrap/assets/stylesheets/css/styles.css.map
 
 bootstrap/assets/stylesheets/css/styles.css.map
