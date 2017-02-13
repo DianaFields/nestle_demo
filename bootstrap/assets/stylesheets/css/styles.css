@@ -9,4 +9,7 @@ importar aquí sus hojas de estilo, ejemplo con scss/hoja_de_estilo.scss
   background: black;
   color: white; }
 
+.claseNueva {
+  color: red; }
+
 /*# sourceMappingURL=styles.css.map */
