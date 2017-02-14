@@ -1,0 +1,102 @@
+// ----------------------------------------------
+// Entrepids
+//Hoja de estilos para proyecto demo Nestle. Sección: Detalle de Producto;
+.catalog-category-view{
+	.col-md-12{
+		.page-container{
+			.breadcrumb{
+				background: none;
+				li{
+					a{
+					color: #434343;
+					}
+					&:before{
+						color: #434343;
+					}
+				}
+				.active{
+					color: $red;
+				}
+			}
+			.content-img{
+				height: auto;
+				img{
+				    width: 80%;
+				    height: auto;
+				    margin: 0 55px;
+
+				}
+			}
+			.info-prod{
+				h1{
+					font-family: 'NescafeSans-Bold';
+					font-size: 15pt;
+					color: $red;
+				}
+				.stars{
+					display: inline-flex;
+				    float: right;
+				    position: absolute;
+				    left: 200px;
+				    top: 24px;
+				    background: url(/media/stars.svg) no-repeat 35% 50%;
+				    background-size: 18%;
+				    width: 100%;
+				    color: transparent;
+				}
+				.description{
+					color: #737373;
+					width: 60%;
+					font-size: 10pt;
+				}
+				.sku{
+					float: right;
+				    position: relative;
+				    text-align: left;
+				    top: -30px;
+				    right: 140px;
+				}
+				.price{
+					list-style: none;
+					padding: 0px;
+					margin-left: -10px;
+					.old-price{
+						display: inline-block;
+						margin: 0 12px;
+    					font-size: 14pt;
+    					color: #737373;
+    					text-decoration: line-through;
+
+					}
+					.new-price{
+						display: inline-block;
+						margin: 0 12px;
+    					font-size: 14pt;
+    					color: $red;
+    					font-weight: 500;
+
+					}
+				}
+				.stock{
+					color: #00913d;
+				}
+				.quantity{
+					width: 80%;
+					padding: 20px 0;
+				input{
+				    border: 2px solid $red;
+				    height: 34px;
+    				border-radius: 6px;
+    				text-align: center;
+					}
+				}
+				button{
+					@include button_red{
+						
+
+					}
+				}
+			}
+		}
+	}
+}
