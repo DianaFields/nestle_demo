@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'NescafeSans-Bold';
-  src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
+  src: url("../../fonts/nescafe/NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/nescafe/NescafeSans-Bold.woff") format("woff"), url("../../fonts/nescafe/NescafeSans-Bold.ttf") format("truetype"), url("../../fonts/nescafe/NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 .header1 {
@@ -51,79 +51,91 @@ header .header1 {
       font-weight: 200; }
 header .header2 {
   height: 130px; }
+  header .header2 ul {
+    margin: 0; }
   header .header2 h1 {
     background-image: url("../../images/home/nescafe-logo.png");
     width: 208px;
     height: 56px;
-    text-indent: -999999px; }
-  header .header2 .search {
-    width: 350px;
-    padding: 1em 1em;
-    font-size: 1em;
-    -moz-border-radius: 5px 0 0 5px;
-    -webkit-border-radius: 5px 0 0 5px;
-    -ms-border-radius: 5px 0 0 5px;
-    border-radius: 5px 0 0 5px;
-    background: white;
-    border: 1px solid #e1261c;
-    border-right: none;
-    color: black; }
-    header .header2 .search::-webkit-input-placeholder {
-      /* Chrome/Opera/Safari */
-      color: #434343;
-      font-family: 'NescafeSans-Bold'; }
-    header .header2 .search::-moz-placeholder {
-      /* Firefox 19+ */
-      color: #434343;
-      font-family: 'NescafeSans-Bold'; }
-    header .header2 .search:-ms-input-placeholder {
-      /* IE 10+ */
-      color: #434343;
-      font-family: 'NescafeSans-Bold'; }
-    header .header2 .search:-moz-placeholder {
-      /* Firefox 18- */
-      color: #434343;
-      font-family: 'NescafeSans-Bold'; }
-    header .header2 .search:focus {
-      outline: none; }
-  header .header2 .search-submit {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -moz-border-radius: 0 5px 5px 0;
-    -webkit-border-radius: 0 5px 5px 0;
-    -ms-border-radius: 0 5px 5px 0;
-    border-radius: 0 5px 5px 0;
-    border: 1px solid #e1261c;
-    border-left: none;
-    background-color: transparent;
-    padding: 1em 3em;
-    position: relative;
-    top: 3px;
-    left: -5px; }
-    header .header2 .search-submit:focus {
-      outline: none; }
-  header .header2 .glyphicon-search {
-    position: absolute;
-    font-size: 20px;
-    color: #e1261c;
-    top: 13px; }
-    header .header2 .glyphicon-search:after {
-      content: " ";
-      background-color: #e1261c;
-      width: 2px;
-      height: 29px;
+    text-indent: -999999px;
+    margin: 37px 0; }
+  header .header2 .search-block {
+    width: 435px;
+    height: 46px;
+    position: relative; }
+    header .header2 .search-block .search {
       position: absolute;
-      left: -6px; }
-    header .header2 .glyphicon-search:before {
-      left: 26px;
+      top: 0;
+      left: 0;
+      font-family: 'NescafeSans-Bold';
+      width: 350px;
+      padding: 1em 1em;
+      font-size: 1em;
+      -moz-border-radius: 5px 0 0 5px;
+      -webkit-border-radius: 5px 0 0 5px;
+      -ms-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px;
+      background: white;
+      border: 1px solid #e1261c;
+      border-right: none;
+      color: black; }
+      header .header2 .search-block .search::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #434343;
+        font-family: 'NescafeSans-Bold'; }
+      header .header2 .search-block .search::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #434343;
+        font-family: 'NescafeSans-Bold'; }
+      header .header2 .search-block .search:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #434343;
+        font-family: 'NescafeSans-Bold'; }
+      header .header2 .search-block .search:-moz-placeholder {
+        /* Firefox 18- */
+        color: #434343;
+        font-family: 'NescafeSans-Bold'; }
+      header .header2 .search-block .search:focus {
+        outline: none; }
+    header .header2 .search-block .search-submit {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      -moz-border-radius: 0 5px 5px 0;
+      -webkit-border-radius: 0 5px 5px 0;
+      -ms-border-radius: 0 5px 5px 0;
+      border-radius: 0 5px 5px 0;
+      border: 1px solid #e1261c;
+      border-left: none;
+      background-color: transparent;
+      padding: 1em 3em;
       position: absolute;
-      top: 3px; }
+      top: 0px;
+      right: 0; }
+      header .header2 .search-block .search-submit:focus {
+        outline: none; }
+    header .header2 .search-block .glyphicon-search {
+      position: absolute;
+      font-size: 20px;
+      color: #e1261c;
+      top: 10px;
+      right: 72px; }
+      header .header2 .search-block .glyphicon-search:after {
+        content: " ";
+        background-color: #e1261c;
+        width: 2px;
+        height: 29px;
+        position: absolute;
+        left: -6px; }
+      header .header2 .search-block .glyphicon-search:before {
+        left: 26px;
+        position: absolute;
+        top: 3px; }
   header .header2 .cart-small {
     border-radius: 0 0 5px 5px;
     border: 1px solid #e1261c;
-    padding: 1em 3em;
+    padding: 1.6em 3em;
     position: absolute;
     border-top: none;
     right: 0; }
@@ -147,6 +159,62 @@ header .header3 {
   height: 50px; }
   header .header3 a {
     color: white; }
+  header .header3 .container {
+    height: 50px; }
+    header .header3 .container ul {
+      margin: 0; }
+    header .header3 .container .dropdown .dropdown-menu {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      border-radius: 0;
+      box-shadow: none; }
+      header .header3 .container .dropdown .dropdown-menu:before {
+        content: "\e072";
+        font-family: 'Glyphicons Halflings';
+        display: inline-block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+      header .header3 .container .dropdown .dropdown-menu li {
+        width: 100%; }
+        header .header3 .container .dropdown .dropdown-menu li a {
+          color: white;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+          header .header3 .container .dropdown .dropdown-menu li a:hover {
+            background-color: white;
+            color: #e1261c; }
+    header .header3 .container li {
+      line-height: 50px; }
+      header .header3 .container li a {
+        padding: 0 4em; }
+        header .header3 .container li a .glyphicon-play {
+          -ms-transform: rotate(90deg) scale(0.8, 1);
+          /* IE 9 */
+          -webkit-transform: rotate(90deg) scale(0.8, 1);
+          /* Chrome, Safari, Opera */
+          transform: rotate(90deg) scale(0.8, 1);
+          margin-left: 7px;
+          position: relative;
+          top: 3px; }
+        header .header3 .container li a:focus {
+          text-decoration: none;
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+          height: 50px;
+          display: inline-block;
+          padding: 0 3.95em; }
+          header .header3 .container li a:focus .glyphicon-play {
+            -ms-transform: rotate(-90deg) scale(0.8, 1);
+            /* IE 9 */
+            -webkit-transform: rotate(-90deg) scale(0.8, 1);
+            /* Chrome, Safari, Opera */
+            transform: rotate(-90deg) scale(0.8, 1);
+            margin-left: 7px;
+            position: relative;
+            top: 3px; }
 
 .solutionsTop {
   width: 100%; }
@@ -388,7 +456,7 @@ header .header3 {
 
 @font-face {
   font-family: 'NescafeSans-Bold';
-  src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
+  src: url("../../fonts/nescafe/NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/nescafe/NescafeSans-Bold.woff") format("woff"), url("../../fonts/nescafe/NescafeSans-Bold.ttf") format("truetype"), url("../../fonts/nescafe/NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
