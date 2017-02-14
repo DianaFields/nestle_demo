@@ -68,6 +68,8 @@ $red-nescafe: #e1261c;
 	}
 	.toolNav{
 		border-top: 1px solid #ededed;
+		height: 80px;
+    	line-height: 80px;
 		a{
 			color: $red-nescafe;
 			text-decoration: none;
@@ -160,6 +162,8 @@ $red-nescafe: #e1261c;
 }
 .toolCenter{
 	text-align: center;
+	height: 80px;
+    line-height: 80px;
 }
 .division{
 	width: 100%;
@@ -189,12 +193,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a0a0a0', e
 .overlay{
 	background: rgba(0,0,0,0.6);
     z-index: 1!important;
-    height: 100%;
 }
 #solucionSelected, #solucionSelectedMilano{
 	width: 100%;
     position: absolute;
     z-index: -1;
+    height: 100%;
     i{
     	position: absolute;
     	right: 5%;
@@ -209,3 +213,73 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a0a0a0', e
 	    padding: 3%;
     }
 }
+.tabSolucion{
+	.tabSolution{
+			width: 40%;
+			margin: 0 auto;
+			li{
+				display: inline-block;
+				width: 49%;
+				border:1px solid #ededed;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+			}
+		
+	}
+	/*estilos menu lateral*/
+	.menuTab{
+
+	    .right{
+	    	float: right;
+	    }
+	    h3{
+	    	font-size: 16px;
+	    	border-bottom: 1px solid;
+	    	border-color:$red-nescafe;
+	    	padding: 5px;
+	    }
+	    .title{
+	    	position: relative;
+		    i{
+		    	position: absolute;
+		    	right: 2%;
+		    	top: 6px;
+		    }
+
+	    }
+	}
+	.quatity-bar{
+	    width: 100%;
+	    height: 20px;	
+	    .selectBar{
+	    	width: 100%;
+	    	height: 10px;
+	    	background: red;
+	    	border-radius: 20px;
+	    }
+	    .btn-bar {
+	    	width: 20px;
+	    	height: 20px;
+	    	border-radius: 10px;
+	    	background: black;
+	    }
+	    .coffee-bean{
+	    	width: 20px;
+	    	height: 20px;
+	    	display: inline-block;
+	    	img{
+	    		width: 100%;
+	    	}
+	    }
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -196,7 +196,9 @@ header .header3 {
     .solutionMain table .title {
       width: 18%; }
   .solutionMain .toolNav {
-    border-top: 1px solid #ededed; }
+    border-top: 1px solid #ededed;
+    height: 80px;
+    line-height: 80px; }
     .solutionMain .toolNav a {
       color: #e1261c;
       text-decoration: none;
@@ -271,7 +273,9 @@ header .header3 {
   text-align: right; }
 
 .toolCenter {
-  text-align: center; }
+  text-align: center;
+  height: 80px;
+  line-height: 80px; }
 
 .division {
   width: 100%;
@@ -306,13 +310,13 @@ header .header3 {
 
 .overlay {
   background: rgba(0, 0, 0, 0.6);
-  z-index: 1 !important;
-  height: 100%; }
+  z-index: 1 !important; }
 
 #solucionSelected, #solucionSelectedMilano {
   width: 100%;
   position: absolute;
-  z-index: -1; }
+  z-index: -1;
+  height: 100%; }
   #solucionSelected i, #solucionSelectedMilano i {
     position: absolute;
     right: 5%;
@@ -325,6 +329,51 @@ header .header3 {
     border-radius: 25px;
     text-align: center;
     padding: 3%; }
+
+.tabSolucion {
+  /*estilos menu lateral*/ }
+  .tabSolucion .tabSolution {
+    width: 40%;
+    margin: 0 auto; }
+    .tabSolucion .tabSolution li {
+      display: inline-block;
+      width: 49%;
+      border: 1px solid #ededed;
+      height: 45px;
+      line-height: 45px;
+      text-align: center; }
+  .tabSolucion .menuTab .right {
+    float: right; }
+  .tabSolucion .menuTab h3 {
+    font-size: 16px;
+    border-bottom: 1px solid;
+    border-color: #e1261c;
+    padding: 5px; }
+  .tabSolucion .menuTab .title {
+    position: relative; }
+    .tabSolucion .menuTab .title i {
+      position: absolute;
+      right: 2%;
+      top: 6px; }
+  .tabSolucion .quatity-bar {
+    width: 100%;
+    height: 20px; }
+    .tabSolucion .quatity-bar .selectBar {
+      width: 100%;
+      height: 10px;
+      background: red;
+      border-radius: 20px; }
+    .tabSolucion .quatity-bar .btn-bar {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background: black; }
+    .tabSolucion .quatity-bar .coffee-bean {
+      width: 20px;
+      height: 20px;
+      display: inline-block; }
+      .tabSolucion .quatity-bar .coffee-bean img {
+        width: 100%; }
 
 .header1 {
   background: black;
