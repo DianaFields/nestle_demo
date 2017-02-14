@@ -24,13 +24,10 @@
       		</div>
 
           <div class="col-sm-4 register">
-            <a>Ingresar</a>
-            <a>Regístate</a>
-            
+            <a>Ingresar<span class="glyphicon glyphicon-play"></span></a>
+            <a>¿Nuevo? Regístate</a>
           </div>
-
           </div>
-
       </div>
 
 
@@ -39,8 +36,14 @@
           <div class="col-sm-12">
             <ul>
               <li><h1>Nescafé</h1> </li>
-              <li><input type=search results=5 placeholder="Buscar"></li>
-              <li><a>Carrito</a></li>
+              <li>
+              <form class="relative search-block">
+              <input class="search" type=search results=5 placeholder="Buscar" autosave=a_unique_value>
+              <span class="glyphicon glyphicon-search"></span></a>
+              <input class="search-submit" type="submit" value="">
+              </form>
+              </li>
+              <li class="cart-small"><a href="#" class="carrito">Carrito</a><a href="#">100</a></li>
             </ul>
           </div>
         </div>

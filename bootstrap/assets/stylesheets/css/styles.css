@@ -5,17 +5,115 @@
   font-style: normal; }
 header li {
   display: inline-block;
-  list-style: none; }
+  list-style: none;
+  vertical-align: middle; }
 header .w100 {
   width: 100%; }
+header .relative {
+  position: relative; }
 header .header1 {
   background: black;
-  color: white;
-  padding: 1em; }
+  color: white; }
+  header .header1 a {
+    color: white; }
+  header .header1 ul {
+    margin: 0; }
   header .header1 li {
-    margin-left: 2em; }
+    margin-left: 2em;
+    line-height: 3em; }
   header .header1 .register {
-    background-color: #e1261c; }
+    background-color: #e1261c;
+    line-height: 3em; }
+    header .header1 .register .glyphicon-play {
+      -ms-transform: rotate(90deg) scale(0.8, 1);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg) scale(0.8, 1);
+      /* Chrome, Safari, Opera */
+      transform: rotate(90deg) scale(0.8, 1); }
+header .header2 h1 {
+  background-image: url("../../images/home/nescafe-logo.png");
+  width: 208px;
+  height: 56px;
+  text-indent: -999999px; }
+header .header2 .search {
+  width: 350px;
+  padding: 1em 1em;
+  font-size: 1em;
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  background: white;
+  border: 1px solid #e1261c;
+  border-right: none;
+  color: black; }
+  header .header2 .search::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #434343;
+    font-family: 'NescafeSans-Bold'; }
+  header .header2 .search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #434343;
+    font-family: 'NescafeSans-Bold'; }
+  header .header2 .search:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #434343;
+    font-family: 'NescafeSans-Bold'; }
+  header .header2 .search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #434343;
+    font-family: 'NescafeSans-Bold'; }
+  header .header2 .search:focus {
+    outline: none; }
+header .header2 .search-submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #e1261c;
+  border-left: none;
+  background-color: transparent;
+  padding: 1em 3em;
+  position: relative;
+  top: 3px;
+  left: -5px; }
+  header .header2 .search-submit:focus {
+    outline: none; }
+header .header2 .glyphicon-search {
+  position: absolute;
+  font-size: 20px;
+  color: #e1261c;
+  top: 13px; }
+  header .header2 .glyphicon-search:after {
+    content: " ";
+    background-color: #e1261c;
+    width: 2px;
+    height: 29px;
+    position: absolute;
+    left: -6px; }
+  header .header2 .glyphicon-search:before {
+    left: 26px;
+    position: absolute;
+    top: 3px; }
+header .header2 .cart-small a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #e1261c;
+  vertical-align: middle; }
+  header .header2 .cart-small a:hover {
+    text-decoration: none; }
+header .header2 .cart-small .carrito:after {
+  content: ' ';
+  background-image: url("../../images/home/cart.png");
+  width: 50px;
+  height: 45px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: middle; }
 
 .solutionsTop {
   width: 100%;
