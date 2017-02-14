@@ -229,6 +229,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a0a0a0', e
 	}
 	/*estilos menu lateral*/
 	.menuTab{
+		.filter-list{
+			li{
+				list-style: none;
+				color:#737373;
+				line-height: 25px;
+			}
+		}
 
 	    .right{
 	    	float: right;
@@ -246,13 +253,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a0a0a0', e
 		    	right: 2%;
 		    	top: 6px;
 		    }
-		    .ui-accordion-header-active{
-		    	&:before{
-		    		content:'';
-		    	}
-		    }
+		    
 
 	    }
+	  
 	}
 	.quatity-bar{
 	    width: 100%;
@@ -278,6 +282,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a0a0a0', e
 	    	}
 	    }
 	}
+	  #accordion{
+		    .ui-state-default{
+		    	&:before{
+					font-family: 'Glyphicons Halflings';
+		    		content:'\e260';
+		    		color: red;
+		    		font-size: 20px;
+		    		width: 20px;
+		    		height: 20px;
+		    	}
+		    	
+		    }
+
+	    	.ui-accordion-header-active{
+		    	&:before{
+					font-family: 'Glyphicons Halflings';
+		    		content:'\e259';
+		    		color: red;
+		    		font-size: 20px;
+		    		width: 20px;
+		    		height: 20px;
+		    	}
+		    }
+	    }
 }
 
 

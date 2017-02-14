@@ -411,6 +411,10 @@ header .header3 {
       height: 45px;
       line-height: 45px;
       text-align: center; }
+  .tabSolucion .menuTab .filter-list li {
+    list-style: none;
+    color: #737373;
+    line-height: 25px; }
   .tabSolucion .menuTab .right {
     float: right; }
   .tabSolucion .menuTab h3 {
@@ -424,8 +428,6 @@ header .header3 {
       position: absolute;
       right: 2%;
       top: 6px; }
-    .tabSolucion .menuTab .title .ui-accordion-header-active:before {
-      content: ''; }
   .tabSolucion .quatity-bar {
     width: 100%;
     height: 20px; }
@@ -445,6 +447,20 @@ header .header3 {
       display: inline-block; }
       .tabSolucion .quatity-bar .coffee-bean img {
         width: 100%; }
+  .tabSolucion #accordion .ui-state-default:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e260';
+    color: red;
+    font-size: 20px;
+    width: 20px;
+    height: 20px; }
+  .tabSolucion #accordion .ui-accordion-header-active:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e259';
+    color: red;
+    font-size: 20px;
+    width: 20px;
+    height: 20px; }
 
 .main-container {
   width: 1170px;
