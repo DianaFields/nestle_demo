@@ -47,11 +47,14 @@ header .header1 {
       font-weight: 200; }
 header .header2 {
   height: 130px; }
+  header .header2 ul {
+    margin: 0; }
   header .header2 h1 {
     background-image: url("../../images/home/nescafe-logo.png");
     width: 208px;
     height: 56px;
-    text-indent: -999999px; }
+    text-indent: -999999px;
+    margin: 37px 0; }
   header .header2 .search {
     width: 350px;
     padding: 1em 1em;
@@ -143,6 +146,12 @@ header .header3 {
   height: 50px; }
   header .header3 a {
     color: white; }
+  header .header3 .container {
+    height: 50px; }
+    header .header3 .container ul {
+      margin: 0; }
+    header .header3 .container li {
+      line-height: 50px; }
 
 .solutionsTop {
   width: 100%; }
