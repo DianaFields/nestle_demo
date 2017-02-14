@@ -8,7 +8,7 @@
                         </div>
                         <ol class="opc opc-firststep-billing panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <li id="opc-billing" class="section allow active panel panel-default">
-                                <div class="step-title panel-heading" role="tab" id="headingOne"">
+                                <div class="step-title panel-heading" role="tab" id="headingOne">
                                     <span class="number">1</span>
                                     <h2 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             Información de envío</a></h2>
@@ -142,15 +142,15 @@
                                     </form>
                                 </div>
                             </li>
-                            <li id="opc-shipping_method" class="section">
-                                <div class="step-title">
+                            <li id="opc-shipping_method" class="section panel panel-default">
+                                <div class="panel-heading step-title" role="tab" id="headingTwo">
                                     <span class="number">2</span>
-                                    <h2>Método de envío</h2>
+                                    <h2 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Método de envío</a></h2>
                                     <a href="#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-shipping_method" class="step a-item" >
+                                <div id="collapseTwo" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingTwo">
                                     <form id="co-shipping-method-form" action="">
-                                        <div id="checkout-shipping-method-load">
+                                        <div id="checkout-shipping-method-load" class="panel-body">
 
                                         </div>
                                         <div id="onepage-checkout-shipping-method-additional-load">
@@ -223,15 +223,15 @@
                                     </form>
                                 </div>
                             </li>
-                            <li id="opc-payment" class="section">
-                                <div class="step-title">
+                            <li id="opc-payment" class="section panel panel-default">
+                                <div class="step-title panel-heading" role="tab" id="headingThree">
                                     <span class="number">3</span>
-                                    <h2>Información de Pago</h2>
+                                    <h2 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Información de Pago</a></h2>
                                     <a href="#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-payment" class="step a-item" >
+                                <div id="collapseThree" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingThree">
                                     <form action="" id="co-payment-form">
-                                        <div class="fieldset">
+                                        <div class="panel-body fieldset">
                                             <dl class="sp-methods" id="checkout-payment-method-load">
                                                 <!-- Content dynamically loaded. Content from the methods.phtml is loaded during the ajax call -->
                                             </dl>
@@ -249,44 +249,19 @@
                                     </div>
                                 </div>
                             </li>
-                            <li id="opc-review" class="section">
-                                <div class="step-title">
+                            <li id="opc-review" class="section panel panel-default">
+                                <div class="panel-heading step-title" role="tab" id="headingFour">
                                     <span class="number">4</span>
-                                    <h2>Reseña del Pedido</h2>
+                                    <h2 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Reseña del Pedido</a></h2>
                                     <a href="#">Modificar</a>
                                 </div>
-                                <div id="checkout-step-review" class="step a-item" >
-                                    <div class="order-review" id="checkout-review-load">
-                                        <!-- Content loaded dynamically -->
+                                <div id="collapseFour" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body order-review" id="checkout-review-load">
+                                        <h3>Resumen de la orden</h3>
                                     </div>
                                 </div>
                             </li>
                         </ol>
-                    </div>
-                    <div class="col-right sidebar">
-                        <div id="checkout-progress-wrapper">
-                            <div class="block block-progress opc-block-progress">
-                                <div class="block-title">
-                                    <strong><span>El progreso de su pago</span></strong>
-                                </div>
-                                <div class="block-content">
-                                    <div class="billing-progress-opcheckout">
-                                        Direcciones de envío
-                                    </div>
-
-                                    <div class="shipping-progress-opcheckout">
-                                    </div>
-
-                                    <div class="shipping_method-progress-opcheckout">
-                                        Método de envío
-                                    </div>
-
-                                    <div class="payment-progress-opcheckout">
-                                        Método de pago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
