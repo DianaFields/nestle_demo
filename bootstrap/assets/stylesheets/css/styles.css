@@ -110,15 +110,13 @@ header .header1 {
   color: white; }
 
 .catalog-category-view .col-md-10 .page-container .breadcrumb {
-  padding: 0 0;
-  list-style: none;
-  background-color: #fff;
-  border-radius: 0;
-  font-family: 'Helvetica Neue'; }
-  .catalog-category-view .col-md-10 .page-container .breadcrumb li {
-    display: inline-block; }
-    .catalog-category-view .col-md-10 .page-container .breadcrumb li a {
-      text-decoration: none; }
+  background: none; }
+  .catalog-category-view .col-md-10 .page-container .breadcrumb li a {
+    color: #434343; }
+  .catalog-category-view .col-md-10 .page-container .breadcrumb li:before {
+    color: #434343; }
+  .catalog-category-view .col-md-10 .page-container .breadcrumb .active {
+    color: #e1261d; }
 
 @font-face {
   font-family: 'NescafeSans-Bold';

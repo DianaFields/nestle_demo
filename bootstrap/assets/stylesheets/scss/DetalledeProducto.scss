@@ -5,17 +5,18 @@
 	.col-md-10{
 		.page-container{
 			.breadcrumb{
-				padding: 0 0;
-			    list-style: none;
-			    background-color: #fff;
-			    border-radius: 0;
-			    font-family: 'Helvetica Neue';
-			    li{
-			    	display: inline-block;
-			    	a{
-			    		text-decoration: none;
-			    	}
-			    }
+				background: none;
+				li{
+					a{
+					color: #434343;
+					}
+					&:before{
+						color: #434343;
+					}
+				}
+				.active{
+					color: #e1261d;
+				}
 			}
 		}
 	}
