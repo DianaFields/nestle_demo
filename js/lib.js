@@ -132,6 +132,45 @@ var validator = {
 
 };
 
+
+var checkout = {
+
+    addToCart: function(id, qty){
+        
+        //$.removeCookie('cart');
+        var content = $('#' +  id).html();
+        var cart = checkout.getCart();
+
+        try{
+            cart.cartitems["item-" + id].qty = parseInt(cart.cartitems["item-" + id].qty) + 1;
+        }catch(err){
+            console.log(err);
+            cart.cartitems["item-" + id] = {qty:1,html:"<div>ITEM HTML</div>"};
+        }
+
+        checkout.setCart(cart);
+
+        console.log(cart);
+    },
+
+    getCart: function(){
+
+        if($.cookie('cart')){
+            return JSON.parse($.cookie('cart'));
+        }else{
+            $.cookie('cart', JSON.stringify({cartitems:{}}));
+            return JSON.parse($.cookie('cart'));
+        }
+
+    },
+
+    setCart: function(cart){
+        var newCart = JSON.stringify(cart);
+        $.cookie('cart', newCart);
+    }
+
+}
+
 var utils = {
 
     getParameterByName: function(name){
@@ -145,7 +184,6 @@ var utils = {
 
     createTable: function(selector, objects, data, column){
 
-        console.log(data.length);
 
         try{
             var table = "<table id='rand'>";
