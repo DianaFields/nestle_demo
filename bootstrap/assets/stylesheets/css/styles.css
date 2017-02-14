@@ -78,7 +78,8 @@ header .header2 {
       background: white;
       border: 1px solid #e1261c;
       border-right: none;
-      color: black; }
+      color: black;
+      height: 46px; }
       header .header2 .search-block .search::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: #434343;
