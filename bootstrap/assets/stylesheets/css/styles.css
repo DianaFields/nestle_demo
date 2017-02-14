@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'NescafeSans-Bold';
+  src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .header1 {
   background: black;
   color: white; }
@@ -11,6 +16,10 @@ header .header1 {
   background: black;
   color: white;
   padding: 1em; }
+  header .header1 li {
+    margin-left: 2em; }
+  header .header1 .register {
+    background-color: #e1261c; }
 
 .solutionsTop {
   width: 100%;
