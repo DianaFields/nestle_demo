@@ -9,34 +9,54 @@ header{
 	}
 	.relative{
 		position: relative;
+		left: 90px;
 	}
 	.header1{
+		height: 60px;
+		background:black;
+		color: white;
 		a{
 			color: white;
 		}
-		background:black;
-		color: white;
 		ul{
 			margin: 0;
 		}
 
 		li{
 			margin-left: 2em;
-			line-height: 3em;
+			line-height: 60px;
 			
 		}
 		.register{
 			background-color: $red;
-		    line-height: 3em;
-			
+		    line-height: 60px;
+	        text-align: center;
+	        height: 60px;
+	        a{
+	        	margin: 0 1em;
+	        }
 			.glyphicon-play{
 				-ms-transform: rotate(90deg) scale(.8,1); /* IE 9 */
 			    -webkit-transform: rotate(90deg) scale(.8,1); /* Chrome, Safari, Opera */
 			    transform: rotate(90deg) scale(.8,1);
+		        margin-left: 7px;
+			    position: relative;
+			    top: 3px;
+			}
+			.login{
+				font-weight: bold;
+				&:hover{
+					text-decoration: none;
+				}
+
+			}
+			.new-user{
+				font-weight: 200;
 			}
 		}
 	}
 	.header2{
+		height: 130px;
 		h1{
 			background-image: url('../../images/home/nescafe-logo.png');
 			width: 208px;
@@ -116,6 +136,12 @@ header{
 		    }
 		}
 		.cart-small{
+			border-radius: 0 0 5px 5px;
+			border: 1px solid $red;
+			padding: 1em 3em;
+			position: absolute;
+			border-top: none;
+			right: 0;
 			a{
 				font-weight: bold;
 				font-size: 18px;
@@ -136,6 +162,13 @@ header{
 				    vertical-align: middle;
 				}
 			}			
+		}
+	}
+	.header3{
+		background-color: $red;
+		height: 50px;
+		a{
+			color: white;
 		}
 	}
 }
