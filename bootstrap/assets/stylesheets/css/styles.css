@@ -265,7 +265,9 @@ header .header3 {
     .solutionMain table .title {
       width: 18%; }
   .solutionMain .toolNav {
-    border-top: 1px solid #ededed; }
+    border-top: 1px solid #ededed;
+    height: 80px;
+    line-height: 80px; }
     .solutionMain .toolNav a {
       color: #e1261c;
       text-decoration: none;
@@ -295,8 +297,8 @@ header .header3 {
       font-size: 20px;
       color: #e1261c; }
   .solutionMain #variedades {
-    width: 330px;
-    height: 150px;
+    width: 310px;
+    height: 130px;
     border: 1px solid;
     border-color: #e1261c;
     padding: 3%;
@@ -304,11 +306,10 @@ header .header3 {
     background: #fff;
     z-index: 1;
     display: none;
-    margin-top: 20px; }
-    .solutionMain #variedades a {
-      text-align: center; }
-      .solutionMain #variedades a img {
-        width: 100%; }
+    margin-top: 20px;
+    text-align: center; }
+    .solutionMain #variedades a img {
+      width: 100%; }
     .solutionMain #variedades:before {
       content: '';
       width: 0;
@@ -341,7 +342,9 @@ header .header3 {
   text-align: right; }
 
 .toolCenter {
-  text-align: center; }
+  text-align: center;
+  height: 80px;
+  line-height: 80px; }
 
 .division {
   width: 100%;
@@ -373,6 +376,91 @@ header .header3 {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a0a0a0', endColorstr='#00000000',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1 !important; }
+
+#solucionSelected, #solucionSelectedMilano {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 100%; }
+  #solucionSelected i, #solucionSelectedMilano i {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 20px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    text-align: center;
+    padding: 3%; }
+
+.tabSolucion {
+  /*estilos menu lateral*/ }
+  .tabSolucion .tabSolution {
+    width: 40%;
+    margin: 0 auto; }
+    .tabSolucion .tabSolution li {
+      display: inline-block;
+      width: 49%;
+      border: 1px solid #ededed;
+      height: 45px;
+      line-height: 45px;
+      text-align: center; }
+  .tabSolucion .menuTab .filter-list li {
+    list-style: none;
+    color: #737373;
+    line-height: 25px; }
+  .tabSolucion .menuTab .right {
+    float: right; }
+  .tabSolucion .menuTab h3 {
+    font-size: 16px;
+    border-bottom: 1px solid;
+    border-color: #e1261c;
+    padding: 5px; }
+  .tabSolucion .menuTab .title {
+    position: relative; }
+    .tabSolucion .menuTab .title i {
+      position: absolute;
+      right: 2%;
+      top: 6px; }
+  .tabSolucion .quatity-bar {
+    width: 100%;
+    height: 20px; }
+    .tabSolucion .quatity-bar .selectBar {
+      width: 100%;
+      height: 10px;
+      background: red;
+      border-radius: 20px; }
+    .tabSolucion .quatity-bar .btn-bar {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background: black; }
+    .tabSolucion .quatity-bar .coffee-bean {
+      width: 20px;
+      height: 20px;
+      display: inline-block; }
+      .tabSolucion .quatity-bar .coffee-bean img {
+        width: 100%; }
+  .tabSolucion #accordion .ui-state-default:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e260';
+    color: red;
+    font-size: 20px;
+    width: 20px;
+    height: 20px; }
+  .tabSolucion #accordion .ui-accordion-header-active:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e259';
+    color: red;
+    font-size: 20px;
+    width: 20px;
+    height: 20px; }
 
 .main-container {
   width: 1170px;
