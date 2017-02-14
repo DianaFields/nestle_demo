@@ -199,14 +199,20 @@ header{
 				 	border-radius: 0;
     				box-shadow: none;
     				&:before{
-						content: "\e072";
-						font-family: 'Glyphicons Halflings';
+						content: " ";
+						width: 24px;
+						height: 20px;
+						background-color: $red;
+						border: 1px solid white;
 						display: inline-block;
-						-webkit-transform: rotate(90deg);
-						-moz-transform: rotate(90deg);
-						-o-transform: rotate(90deg);
-						-ms-transform: rotate(90deg);
-						transform: rotate(90deg);
+						-webkit-transform: rotate(134deg) scale(.8,1);
+						-moz-transform: rotate(134deg) scale(.8,1);
+						-o-transform: rotate(134deg) scale(.8,1);
+						-ms-transform: rotate(134deg) scale(.8,1);
+						transform: rotate(134deg) scale(.8,1);
+						position: absolute;
+    					top: -14px;
+					    clip: rect(0px, 25px, 14px, 7px);
     				}
     				li{
     					width: 100%;
@@ -218,6 +224,21 @@ header{
     							background-color: white;
     							color: $red;
     						}
+    					}
+    				}
+    				&.menu1{
+    					&:before{
+    						left: 130px;
+    					}
+    				}
+    				&.menu2{
+    					&:before{
+    						left: 96px;
+    					}
+    				}
+    				&.menu3{
+    					&:before{
+    						left: 80px;
     					}
     				}
 				}
