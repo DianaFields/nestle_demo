@@ -3,6 +3,10 @@
   src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
+.header1 {
+  background: black;
+  color: white; }
+
 header li {
   display: inline-block;
   list-style: none;
@@ -313,5 +317,88 @@ header .header3 {
 .header1 {
   background: black;
   color: white; }
+
+.catalog-category-view .col-md-12 .page-container .breadcrumb {
+  background: none; }
+  .catalog-category-view .col-md-12 .page-container .breadcrumb li a {
+    color: #434343; }
+  .catalog-category-view .col-md-12 .page-container .breadcrumb li:before {
+    color: #434343; }
+  .catalog-category-view .col-md-12 .page-container .breadcrumb .active {
+    color: #e1261c; }
+.catalog-category-view .col-md-12 .page-container .content-img {
+  height: auto; }
+  .catalog-category-view .col-md-12 .page-container .content-img img {
+    width: 80%;
+    height: auto;
+    margin: 0 55px; }
+.catalog-category-view .col-md-12 .page-container .info-prod h1 {
+  font-family: 'NescafeSans-Bold';
+  font-size: 15pt;
+  color: #e1261c; }
+.catalog-category-view .col-md-12 .page-container .info-prod .stars {
+  display: inline-flex;
+  float: right;
+  position: absolute;
+  left: 200px;
+  top: 24px;
+  background: url(/media/stars.svg) no-repeat 35% 50%;
+  background-size: 18%;
+  width: 100%;
+  color: transparent; }
+.catalog-category-view .col-md-12 .page-container .info-prod .description {
+  color: #737373;
+  width: 60%;
+  font-size: 10pt; }
+.catalog-category-view .col-md-12 .page-container .info-prod .sku {
+  float: right;
+  position: relative;
+  text-align: left;
+  top: -30px;
+  right: 140px; }
+.catalog-category-view .col-md-12 .page-container .info-prod .price {
+  list-style: none;
+  padding: 0px;
+  margin-left: -10px; }
+  .catalog-category-view .col-md-12 .page-container .info-prod .price .old-price {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 14pt;
+    color: #737373;
+    text-decoration: line-through; }
+  .catalog-category-view .col-md-12 .page-container .info-prod .price .new-price {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 14pt;
+    color: #e1261c;
+    font-weight: 500; }
+.catalog-category-view .col-md-12 .page-container .info-prod .stock {
+  color: #00913d; }
+.catalog-category-view .col-md-12 .page-container .info-prod .quantity {
+  width: 80%;
+  padding: 20px 0; }
+  .catalog-category-view .col-md-12 .page-container .info-prod .quantity input {
+    border: 2px solid #e1261c;
+    height: 34px;
+    border-radius: 6px;
+    text-align: center; }
+.catalog-category-view .col-md-12 .page-container .info-prod button {
+  background: #ff1703;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+  transition: all 500ms ease;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  width: 150px;
+  height: 38px;
+  font-size: 1em; }
+  .catalog-category-view .col-md-12 .page-container .info-prod button:hover {
+    background: #000000; }
+
+@font-face {
+  font-family: 'NescafeSans-Bold';
+  src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=styles.css.map */
