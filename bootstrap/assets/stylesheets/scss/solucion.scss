@@ -3,29 +3,47 @@ $white-color: #fff;
 $red-nescafe: #e1261c;
 .solutionsTop{
 	width: 100%;
-	border-bottom: 1px solid #e8e8e8;
-	.item{
-		width: 24%;
+	.col-xs-3{
 		display: inline-block;
 		text-align: center;
+		vertical-align: top;
+		cursor: pointer;
+		position: relative;
+		padding: 3px;
 		.logo{
 			height: 70px;
 			vertical-align: middle;
 			text-align: center;
 		}
+		table{
+			a{
+				color:$red-nescafe; 
+				z-index: 99;
+			}
+		}
+
 	}
-	.title{
+	.overlaySelected{
+		position: absolute;
+		width: 100%;
+		height: 447px;
+		&:hover{
+			
+		}
+	}
+	.facts{
+		clear: both;
 		text-align: left;
-		vertical-align: top;
 		table{
 			color:#ff0000;
+
 		}
-		p{
-			font-family: 'NescafeSans-Bold';
+	}
+	p{
+		font-family: 'NescafeSans-Bold';
 			font-weight: bold;
 			font-size: 25px;
 			color: $red-nescafe;
-		}
 	}
 }
 .solutionMain{
@@ -49,6 +67,7 @@ $red-nescafe: #e1261c;
 		}
 	}
 	.toolNav{
+		border-top: 1px solid #ededed;
 		a{
 			color: $red-nescafe;
 			text-decoration: none;
@@ -73,6 +92,65 @@ $red-nescafe: #e1261c;
 		font-family: 'NescafeSans-Bold';
 
 	}
+	.titleSolution{
+		position: relative;
+		p{
+			padding-left: 5%;
+		}
+		i{
+			position: absolute;
+			top: 17%;
+			left: 3%;
+			font-size: 20px;
+			color: $red-nescafe;
+		}
+	}
+	#variedades{
+		width: 330px;
+		height: 150px;
+		border:1px solid;
+		border-color:$red-nescafe;
+		padding: 3%;
+		position: absolute;
+		background: #fff;
+		z-index:1;
+		display: none;
+		margin-top: 20px;
+			a{
+				text-align: center;
+			img{
+				width: 100%;
+			}
+		}
+		&:before{
+			content:'';
+			width: 0;
+			height: 0;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 8px solid red;
+			left: 150px;
+			top: -8px;
+			position: absolute;
+		}
+	}
+	.producto{
+		height: 317px;
+	}
+	.overlayProd{
+		position: absolute;
+		top: 0;
+		z-index: 4;
+		display: none;
+		img{
+			width: 100%;
+		    vertical-align: bottom;
+		    bottom: 0;
+		    margin-top: 23%;
+			box-shadow: 7px 7px 15px #c6c6c6;
+			border:1px solid red;
+		}
+	}
 }
 .white-back{
 	background: $white-color;
@@ -86,6 +164,7 @@ $red-nescafe: #e1261c;
 .division{
 	width: 100%;
 	height: 30px;
+	clear: both;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,000000+100&0.65+0,0+100 */
 background: -moz-linear-gradient(top,  rgba(234,234,234,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  rgba(234,234,234,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -97,6 +176,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6eaeaea', e
 	display:inline-block;
 	width: 2px;
 	height: 300px;
+	position: absolute;
+	right: 0;
+	top: 0;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a0a0a0+2,000000+100&0.65+0,0+71 */
 background: -moz-radial-gradient(center, ellipse cover,  rgba(160,160,160,0.65) 0%, rgba(160,160,160,0.63) 2%, rgba(47,47,47,0) 71%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
 background: -webkit-radial-gradient(center, ellipse cover,  rgba(160,160,160,0.65) 0%,rgba(160,160,160,0.63) 2%,rgba(47,47,47,0) 71%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
