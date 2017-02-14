@@ -6,3 +6,18 @@
 }
 
 $red: #e1261c;
+
+@mixin button_red{
+	background: #ff1703;
+	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.19);
+	transition: all 500ms ease;
+	border-radius: 8px;
+	color: #fff;
+	border: none;
+	width: 150px;
+	height: 38px;
+    font-size: 1em;
+    &:hover{
+    	background: #000000;
+    }
+}
