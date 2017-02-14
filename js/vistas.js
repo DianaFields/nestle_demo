@@ -14,6 +14,11 @@ var vistas = {
 
         });
 
+        $('.add-to-cart').click(function(){
+
+            var cart = checkout.addToCart($(this).attr('item'),1);
+        });
+
     },
     home : function(){
 
