@@ -3,19 +3,150 @@
   src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
+.header1 {
+  background: black;
+  color: white; }
+
 header li {
   display: inline-block;
-  list-style: none; }
+  list-style: none;
+  vertical-align: middle; }
 header .w100 {
   width: 100%; }
+header .relative {
+  position: relative;
+  left: 90px; }
 header .header1 {
+  height: 60px;
   background: black;
-  color: white;
-  padding: 1em; }
+  color: white; }
+  header .header1 a {
+    color: white; }
+  header .header1 ul {
+    margin: 0; }
   header .header1 li {
-    margin-left: 2em; }
+    margin-left: 2em;
+    line-height: 60px; }
   header .header1 .register {
-    background-color: #e1261c; }
+    background-color: #e1261c;
+    line-height: 60px;
+    text-align: center;
+    height: 60px; }
+    header .header1 .register a {
+      margin: 0 1em; }
+    header .header1 .register .glyphicon-play {
+      -ms-transform: rotate(90deg) scale(0.8, 1);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg) scale(0.8, 1);
+      /* Chrome, Safari, Opera */
+      transform: rotate(90deg) scale(0.8, 1);
+      margin-left: 7px;
+      position: relative;
+      top: 3px; }
+    header .header1 .register .login {
+      font-weight: bold; }
+      header .header1 .register .login:hover {
+        text-decoration: none; }
+    header .header1 .register .new-user {
+      font-weight: 200; }
+header .header2 {
+  height: 130px; }
+  header .header2 h1 {
+    background-image: url("../../images/home/nescafe-logo.png");
+    width: 208px;
+    height: 56px;
+    text-indent: -999999px; }
+  header .header2 .search {
+    width: 350px;
+    padding: 1em 1em;
+    font-size: 1em;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    background: white;
+    border: 1px solid #e1261c;
+    border-right: none;
+    color: black; }
+    header .header2 .search::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #434343;
+      font-family: 'NescafeSans-Bold'; }
+    header .header2 .search::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #434343;
+      font-family: 'NescafeSans-Bold'; }
+    header .header2 .search:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #434343;
+      font-family: 'NescafeSans-Bold'; }
+    header .header2 .search:-moz-placeholder {
+      /* Firefox 18- */
+      color: #434343;
+      font-family: 'NescafeSans-Bold'; }
+    header .header2 .search:focus {
+      outline: none; }
+  header .header2 .search-submit {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #e1261c;
+    border-left: none;
+    background-color: transparent;
+    padding: 1em 3em;
+    position: relative;
+    top: 3px;
+    left: -5px; }
+    header .header2 .search-submit:focus {
+      outline: none; }
+  header .header2 .glyphicon-search {
+    position: absolute;
+    font-size: 20px;
+    color: #e1261c;
+    top: 13px; }
+    header .header2 .glyphicon-search:after {
+      content: " ";
+      background-color: #e1261c;
+      width: 2px;
+      height: 29px;
+      position: absolute;
+      left: -6px; }
+    header .header2 .glyphicon-search:before {
+      left: 26px;
+      position: absolute;
+      top: 3px; }
+  header .header2 .cart-small {
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #e1261c;
+    padding: 1em 3em;
+    position: absolute;
+    border-top: none;
+    right: 0; }
+    header .header2 .cart-small a {
+      font-weight: bold;
+      font-size: 18px;
+      color: #e1261c;
+      vertical-align: middle; }
+      header .header2 .cart-small a:hover {
+        text-decoration: none; }
+    header .header2 .cart-small .carrito:after {
+      content: ' ';
+      background-image: url("../../images/home/cart.png");
+      width: 50px;
+      height: 45px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      vertical-align: middle; }
+header .header3 {
+  background-color: #e1261c;
+  height: 50px; }
+  header .header3 a {
+    color: white; }
 
 .solutionsTop {
   width: 100%; }
@@ -177,5 +308,88 @@ header .header1 {
 .header1 {
   background: black;
   color: white; }
+
+.catalog-category-view .col-md-12 .page-container .breadcrumb {
+  background: none; }
+  .catalog-category-view .col-md-12 .page-container .breadcrumb li a {
+    color: #434343; }
+  .catalog-category-view .col-md-12 .page-container .breadcrumb li:before {
+    color: #434343; }
+  .catalog-category-view .col-md-12 .page-container .breadcrumb .active {
+    color: #e1261c; }
+.catalog-category-view .col-md-12 .page-container .content-img {
+  height: auto; }
+  .catalog-category-view .col-md-12 .page-container .content-img img {
+    width: 80%;
+    height: auto;
+    margin: 0 55px; }
+.catalog-category-view .col-md-12 .page-container .info-prod h1 {
+  font-family: 'NescafeSans-Bold';
+  font-size: 15pt;
+  color: #e1261c; }
+.catalog-category-view .col-md-12 .page-container .info-prod .stars {
+  display: inline-flex;
+  float: right;
+  position: absolute;
+  left: 200px;
+  top: 24px;
+  background: url(/media/stars.svg) no-repeat 35% 50%;
+  background-size: 18%;
+  width: 100%;
+  color: transparent; }
+.catalog-category-view .col-md-12 .page-container .info-prod .description {
+  color: #737373;
+  width: 60%;
+  font-size: 10pt; }
+.catalog-category-view .col-md-12 .page-container .info-prod .sku {
+  float: right;
+  position: relative;
+  text-align: left;
+  top: -30px;
+  right: 140px; }
+.catalog-category-view .col-md-12 .page-container .info-prod .price {
+  list-style: none;
+  padding: 0px;
+  margin-left: -10px; }
+  .catalog-category-view .col-md-12 .page-container .info-prod .price .old-price {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 14pt;
+    color: #737373;
+    text-decoration: line-through; }
+  .catalog-category-view .col-md-12 .page-container .info-prod .price .new-price {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 14pt;
+    color: #e1261c;
+    font-weight: 500; }
+.catalog-category-view .col-md-12 .page-container .info-prod .stock {
+  color: #00913d; }
+.catalog-category-view .col-md-12 .page-container .info-prod .quantity {
+  width: 80%;
+  padding: 20px 0; }
+  .catalog-category-view .col-md-12 .page-container .info-prod .quantity input {
+    border: 2px solid #e1261c;
+    height: 34px;
+    border-radius: 6px;
+    text-align: center; }
+.catalog-category-view .col-md-12 .page-container .info-prod button {
+  background: #ff1703;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+  transition: all 500ms ease;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  width: 150px;
+  height: 38px;
+  font-size: 1em; }
+  .catalog-category-view .col-md-12 .page-container .info-prod button:hover {
+    background: #000000; }
+
+@font-face {
+  font-family: 'NescafeSans-Bold';
+  src: url("NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("NescafeSans-Bold.woff") format("woff"), url("NescafeSans-Bold.ttf") format("truetype"), url("NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=styles.css.map */
