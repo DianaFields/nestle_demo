@@ -382,13 +382,15 @@ $red-nescafe: #e1261c;
 				padding: 0 12px;
 				color: #666;
 				#spinner{
-					width: 70%;
+					width: 60%;
 					border:none;
 					height: 38px;
 					outline: none;
 					border-right:1px solid;
 					border-left:1px solid;
 					border-color:$red-nescafe;
+					text-align: center;
+					font-size: 18px;
 				}
 				.ui-spinner-button{
 					span{
@@ -399,13 +401,17 @@ $red-nescafe: #e1261c;
 					float: left;
 					&:before{
 						content:'-';
-						font-size: 20px;
+						font-size: 22px;
+						color: #000;
+						color: #000;
 					}
 				}
 				.ui-spinner-up{
 					float: right;
 					&:before{
+						font-size: 22px;
 						content:'+';
+						color: #000;
 					}
 				}
 			}

@@ -630,24 +630,30 @@ footer .enlaces {
       padding: 0 12px;
       color: #666; }
       .tabSolucion .catalog .product .action-product #spinner {
-        width: 70%;
+        width: 60%;
         border: none;
         height: 38px;
         outline: none;
         border-right: 1px solid;
         border-left: 1px solid;
-        border-color: #e1261c; }
+        border-color: #e1261c;
+        text-align: center;
+        font-size: 18px; }
       .tabSolucion .catalog .product .action-product .ui-spinner-button span {
         display: none; }
       .tabSolucion .catalog .product .action-product .ui-spinner-down {
         float: left; }
         .tabSolucion .catalog .product .action-product .ui-spinner-down:before {
           content: '-';
-          font-size: 20px; }
+          font-size: 22px;
+          color: #000;
+          color: #000; }
       .tabSolucion .catalog .product .action-product .ui-spinner-up {
         float: right; }
         .tabSolucion .catalog .product .action-product .ui-spinner-up:before {
-          content: '+'; }
+          font-size: 22px;
+          content: '+';
+          color: #000; }
   .tabSolucion .menuTab .filter-list li {
     list-style: none;
     color: #737373;
