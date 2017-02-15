@@ -494,7 +494,7 @@ header .header3 {
       width: 50%;
       text-align: center;
       position: relative;
-      margin: 10px auto 0; }
+      margin: 40px auto 20px; }
       .main-container .main .col-main .page-title span {
         color: #000;
         font-family: 'NescafeSans-Bold', Arial;
@@ -502,7 +502,37 @@ header .header3 {
         background: #FFF;
         font-size: 18px; }
     .main-container .main .col-main ol {
+      float: left;
+      width: 75%;
       list-style: none; }
+      .main-container .main .col-main ol li .step-title {
+        clear: both;
+        width: 100%;
+        display: block;
+        height: 40px; }
+        .main-container .main .col-main ol li .step-title .number {
+          float: left;
+          padding: 1px 6px;
+          display: block;
+          background: #e1261c;
+          color: #FFF;
+          border-radius: 3px;
+          font-size: 9pt;
+          margin-top: -1px; }
+        .main-container .main .col-main ol li .step-title h2.panel-title {
+          float: left;
+          padding: 0 10px;
+          display: block; }
+        .main-container .main .col-main ol li .step-title a {
+          float: right;
+          width: 15%;
+          text-align: right;
+          display: block;
+          color: #999;
+          font-size: 9pt; }
+    .main-container .main .col-right.sidebar {
+      width: 23%;
+      float: right; }
 
 .catalog-category-view .col-md-12 .page-container .breadcrumb {
   background: none; }
