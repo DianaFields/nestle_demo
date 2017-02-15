@@ -217,6 +217,9 @@ header .header3 {
             position: relative;
             top: 3px; }
 
+.border-hover:hover {
+  border: 1px solid #999; }
+
 .solutionsTop {
   width: 100%; }
   .solutionsTop .col-xs-3 {
@@ -225,7 +228,7 @@ header .header3 {
     vertical-align: top;
     cursor: pointer;
     position: relative;
-    padding: 3px; }
+    padding: 0; }
     .solutionsTop .col-xs-3 .logo {
       height: 70px;
       vertical-align: middle;
@@ -249,6 +252,7 @@ header .header3 {
     color: #e1261c; }
 
 .solutionMain {
+  margin-top: 5%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .solutionMain table {
     width: 100%;
@@ -289,12 +293,13 @@ header .header3 {
   .solutionMain .titleSolution {
     position: relative; }
     .solutionMain .titleSolution p {
-      padding-left: 5%; }
+      padding-left: 5%;
+      font-size: 20px; }
     .solutionMain .titleSolution i {
       position: absolute;
       top: 17%;
       left: 3%;
-      font-size: 20px;
+      font-size: 16px;
       color: #e1261c; }
   .solutionMain #variedades {
     width: 310px;
@@ -325,8 +330,14 @@ header .header3 {
   .solutionMain .overlayProd {
     position: absolute;
     top: 0;
-    z-index: 4;
-    display: none; }
+    z-index: 0;
+    width: 100%;
+    height: 245px;
+    margin-top: 70px; }
+    .solutionMain .overlayProd:hover {
+      background-size: cover;
+      background: url("http://nestle.local.entrepids.com/bootstrap/assets/images/solucion/ubicacion-milano.jpg") no-repeat;
+      background-position: 0px -20px; }
     .solutionMain .overlayProd img {
       width: 100%;
       vertical-align: bottom;
@@ -377,6 +388,22 @@ header .header3 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a0a0a0', endColorstr='#00000000',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
+.gradientDiv2 {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c3c2c3+45,c3c2c3+57&0+0,1+44,0.8+62,0+100 */
+  background: -moz-linear-gradient(left, rgba(195, 194, 195, 0) 0%, #c3c2c3 44%, rgba(195, 194, 195, 0.99) 45%, rgba(195, 194, 195, 0.86) 57%, rgba(195, 194, 195, 0.8) 62%, rgba(195, 194, 195, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(195, 194, 195, 0) 0%, #c3c2c3 44%, rgba(195, 194, 195, 0.99) 45%, rgba(195, 194, 195, 0.86) 57%, rgba(195, 194, 195, 0.8) 62%, rgba(195, 194, 195, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(195, 194, 195, 0) 0%, #c3c2c3 44%, rgba(195, 194, 195, 0.99) 45%, rgba(195, 194, 195, 0.86) 57%, rgba(195, 194, 195, 0.8) 62%, rgba(195, 194, 195, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c3c2c3', endColorstr='#00c3c2c3',GradientType=1 );
+  /* IE6-9 */ }
+
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1 !important; }
@@ -401,16 +428,36 @@ header .header3 {
 
 .tabSolucion {
   /*estilos menu lateral*/ }
-  .tabSolucion .tabSolution {
+  .tabSolucion .options {
     width: 40%;
     margin: 0 auto; }
-    .tabSolucion .tabSolution li {
+    .tabSolucion .options .ui-state-active a {
+      color: #e1261c !important;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e2e2e2+99&0+0,0.65+100 */
+      background: -moz-linear-gradient(top, transparent 0%, rgba(226, 226, 226, 0.64) 99%, rgba(226, 226, 226, 0.65) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, transparent 0%, rgba(226, 226, 226, 0.64) 99%, rgba(226, 226, 226, 0.65) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, transparent 0%, rgba(226, 226, 226, 0.64) 99%, rgba(226, 226, 226, 0.65) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6e2e2e2',GradientType=0 );
+      /* IE6-9 */ }
+    .tabSolucion .options .ui-state-default a {
+      color: gray; }
+    .tabSolucion .options li {
+      outline: none;
       display: inline-block;
       width: 49%;
       border: 1px solid #ededed;
       height: 45px;
       line-height: 45px;
-      text-align: center; }
+      text-align: center;
+      border-radius: 5px 5px 0 0;
+      cursor: pointer; }
+      .tabSolucion .options li a {
+        font-family: 'NescafeSans-Bold';
+        padding: 6% 32%;
+        outline: none; }
   .tabSolucion .menuTab .filter-list li {
     list-style: none;
     color: #737373;
@@ -447,20 +494,25 @@ header .header3 {
       display: inline-block; }
       .tabSolucion .quatity-bar .coffee-bean img {
         width: 100%; }
-  .tabSolucion #accordion .ui-state-default:before {
+  .tabSolucion #accordion h3 {
+    outline: none;
+    margin: 10% 0; }
+  .tabSolucion #accordion .ui-state-default:after {
     font-family: 'Glyphicons Halflings';
     content: '\e260';
-    color: red;
-    font-size: 20px;
+    color: #737373;
+    font-size: 12px;
     width: 20px;
-    height: 20px; }
-  .tabSolucion #accordion .ui-accordion-header-active:before {
+    height: 20px;
+    float: right; }
+  .tabSolucion #accordion .ui-state-active:after {
     font-family: 'Glyphicons Halflings';
     content: '\e259';
-    color: red;
-    font-size: 20px;
+    color: #737373;
+    font-size: 12px;
     width: 20px;
-    height: 20px; }
+    height: 20px;
+    float: right; }
 
 .main-container {
   width: 1170px;
