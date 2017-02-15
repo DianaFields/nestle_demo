@@ -190,7 +190,8 @@ header .header3 {
         header .header3 .container .dropdown .dropdown-menu li a {
           color: white;
           padding-top: 10px;
-          padding-bottom: 10px; }
+          padding-bottom: 10px;
+          width: 100%; }
           header .header3 .container .dropdown .dropdown-menu li a:hover {
             background-color: white;
             color: #e1261c; }
@@ -230,8 +231,87 @@ header .header3 {
             position: relative;
             top: 3px; }
 
+<<<<<<< HEAD
 .border-hover:hover {
   border: 1px solid #999; }
+=======
+.dropdown-submenu {
+  position: relative; }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px; }
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px; }
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff; }
+
+.dropdown-submenu.pull-left {
+  float: none; }
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px; }
+
+footer .w100 {
+  width: 100%; }
+footer li {
+  list-style: none; }
+footer ul.float > li {
+  display: inline-block;
+  vertical-align: middle; }
+footer .promo {
+  height: 220px; }
+  footer .promo .promo1 img {
+    width: 100%; }
+  footer .promo .promo2 img {
+    width: 100%; }
+footer .brands {
+  background-image: url("../../images/footer/bar.png");
+  background-repeat: no-repeat;
+  background-size: 100% 2px; }
+  footer .brands ul li {
+    vertical-align: middle; }
+    footer .brands ul li.bar {
+      background-image: url("../../images/footer/bar-mini.png");
+      background-repeat: no-repeat;
+      background-position-x: 263px;
+      background-position-y: 34px;
+      background-size: 2px 116px;
+      height: 220px; }
+    footer .brands ul li img {
+      display: block;
+      margin: 50px auto 0; }
+footer .enlaces {
+  background-color: #666666; }
+  footer .enlaces .links {
+    padding: 30px 0; }
+    footer .enlaces .links a {
+      color: white; }
+>>>>>>> moni
 
 .solutionsTop {
   width: 100%; }
