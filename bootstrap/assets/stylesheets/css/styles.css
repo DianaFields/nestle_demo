@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'NescafeSans-Bold';
   src: url("../../fonts/nescafe/NescafeSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/nescafe/NescafeSans-Bold.woff") format("woff"), url("../../fonts/nescafe/NescafeSans-Bold.ttf") format("truetype"), url("../../fonts/nescafe/NescafeSans-Bold.svg#NescafeSans-Bold") format("svg");
@@ -301,7 +302,8 @@ header .header3 {
     border: none;
     border-radius: 10px;
     font-size: 15px;
-    font-family: 'NescafeSans-Bold'; }
+    font-family: 'NescafeSans-Bold';
+    box-shadow: 1px 6px 11px #bebebe; }
   .solutionMain .titleSolution {
     position: relative; }
     .solutionMain .titleSolution p {
@@ -438,6 +440,7 @@ header .header3 {
     text-align: center;
     padding: 3%; }
 
+/*estilos catálogo*/
 .tabSolucion {
   /*estilos menu lateral*/ }
   .tabSolucion .options {
@@ -470,6 +473,103 @@ header .header3 {
         font-family: 'NescafeSans-Bold';
         padding: 6% 32%;
         outline: none; }
+  .tabSolucion .select-bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: red;
+    border-radius: 10px;
+    margin: 5% 0; }
+    .tabSolucion .select-bar #custom-handle {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      top: 50%;
+      margin-top: -5%;
+      text-align: center;
+      position: absolute;
+      background: #000;
+      border-radius: 25px;
+      color: #fff; }
+      .tabSolucion .select-bar #custom-handle:after {
+        display: none; }
+  .tabSolucion .catalog {
+    /*estilos para listado de producto*/ }
+    .tabSolucion .catalog .page-title {
+      font-family: 'NescafeSans-Bold', Arial;
+      font-size: 18px;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 5%; }
+      .tabSolucion .catalog .page-title span {
+        background: #fff; }
+      .tabSolucion .catalog .page-title p {
+        color: #000;
+        width: 50%;
+        display: inline-block;
+        margin: 0 auto; }
+      .tabSolucion .catalog .page-title .red-line {
+        width: 100%;
+        height: 2px;
+        background: #e1261c;
+        margin-top: -2%; }
+    .tabSolucion .catalog .toolCenter button {
+      width: 224px;
+      height: 46px;
+      outline: none;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      box-shadow: 1px 6px 11px #bebebe; }
+    .tabSolucion .catalog .toolCenter .btn-red {
+      background: #e1261c; }
+    .tabSolucion .catalog .toolCenter .btn-black {
+      background: #000; }
+    .tabSolucion .catalog .red-line {
+      width: 30%;
+      height: 2px;
+      background-color: #e1261c; }
+    .tabSolucion .catalog .right {
+      float: right; }
+    .tabSolucion .catalog .product .product-info .sku-product {
+      color: #e1261c; }
+    .tabSolucion .catalog .product .product-info .name-product {
+      font-weight: bold;
+      margin-bottom: 2%; }
+    .tabSolucion .catalog .product .product-info .price-product span {
+      text-decoration: line-through; }
+    .tabSolucion .catalog .product .product-info .price-product p {
+      font-weight: bold; }
+    .tabSolucion .catalog .product .action-product {
+      border: 1px solid;
+      border-color: #e1261c;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 3px;
+      text-align: center;
+      padding: 0 12px;
+      color: #666; }
+      .tabSolucion .catalog .product .action-product #spinner {
+        width: 70%;
+        border: none;
+        height: 38px;
+        outline: none;
+        border-right: 1px solid;
+        border-left: 1px solid;
+        border-color: #e1261c; }
+      .tabSolucion .catalog .product .action-product .ui-spinner-button span {
+        display: none; }
+      .tabSolucion .catalog .product .action-product .ui-spinner-down {
+        float: left; }
+        .tabSolucion .catalog .product .action-product .ui-spinner-down:before {
+          content: '-';
+          font-size: 20px; }
+      .tabSolucion .catalog .product .action-product .ui-spinner-up {
+        float: right; }
+        .tabSolucion .catalog .product .action-product .ui-spinner-up:before {
+          content: '+'; }
   .tabSolucion .menuTab .filter-list li {
     list-style: none;
     color: #737373;
@@ -525,6 +625,8 @@ header .header3 {
     width: 20px;
     height: 20px;
     float: right; }
+  .tabSolucion #accordion label {
+    font-weight: 200; }
 
 .main-container {
   width: 1170px;
