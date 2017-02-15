@@ -170,14 +170,20 @@ header .header3 {
       border-radius: 0;
       box-shadow: none; }
       header .header3 .container .dropdown .dropdown-menu:before {
-        content: "\e072";
-        font-family: 'Glyphicons Halflings';
+        content: " ";
+        width: 24px;
+        height: 20px;
+        background-color: #e1261c;
+        border: 1px solid white;
         display: inline-block;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg); }
+        -webkit-transform: rotate(134deg) scale(0.8, 1);
+        -moz-transform: rotate(134deg) scale(0.8, 1);
+        -o-transform: rotate(134deg) scale(0.8, 1);
+        -ms-transform: rotate(134deg) scale(0.8, 1);
+        transform: rotate(134deg) scale(0.8, 1);
+        position: absolute;
+        top: -14px;
+        clip: rect(0px, 25px, 14px, 7px); }
       header .header3 .container .dropdown .dropdown-menu li {
         width: 100%; }
         header .header3 .container .dropdown .dropdown-menu li a {
@@ -187,6 +193,12 @@ header .header3 {
           header .header3 .container .dropdown .dropdown-menu li a:hover {
             background-color: white;
             color: #e1261c; }
+      header .header3 .container .dropdown .dropdown-menu.menu1:before {
+        left: 130px; }
+      header .header3 .container .dropdown .dropdown-menu.menu2:before {
+        left: 96px; }
+      header .header3 .container .dropdown .dropdown-menu.menu3:before {
+        left: 80px; }
     header .header3 .container li {
       line-height: 50px; }
       header .header3 .container li a {
@@ -534,7 +546,7 @@ header .header3 {
       width: 50%;
       text-align: center;
       position: relative;
-      margin: 10px auto 0; }
+      margin: 40px auto 20px; }
       .main-container .main .col-main .page-title span {
         color: #000;
         font-family: 'NescafeSans-Bold', Arial;
@@ -542,7 +554,37 @@ header .header3 {
         background: #FFF;
         font-size: 18px; }
     .main-container .main .col-main ol {
+      float: left;
+      width: 75%;
       list-style: none; }
+      .main-container .main .col-main ol li .step-title {
+        clear: both;
+        width: 100%;
+        display: block;
+        height: 40px; }
+        .main-container .main .col-main ol li .step-title .number {
+          float: left;
+          padding: 1px 6px;
+          display: block;
+          background: #e1261c;
+          color: #FFF;
+          border-radius: 3px;
+          font-size: 9pt;
+          margin-top: -1px; }
+        .main-container .main .col-main ol li .step-title h2.panel-title {
+          float: left;
+          padding: 0 10px;
+          display: block; }
+        .main-container .main .col-main ol li .step-title a {
+          float: right;
+          width: 15%;
+          text-align: right;
+          display: block;
+          color: #999;
+          font-size: 9pt; }
+    .main-container .main .col-right.sidebar {
+      width: 23%;
+      float: right; }
 
 .catalog-category-view .col-md-12 .page-container .breadcrumb {
   background: none; }
@@ -558,6 +600,34 @@ header .header3 {
     width: 80%;
     height: auto;
     margin: 0 55px; }
+  .catalog-category-view .col-md-12 .page-container .content-img .thumbs {
+    display: inline-flex;
+    width: 100%; }
+  .catalog-category-view .col-md-12 .page-container .content-img .thumb-link {
+    width: 150px;
+    height: 130px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 8px;
+    text-align: center; }
+    .catalog-category-view .col-md-12 .page-container .content-img .thumb-link img {
+      width: 80%;
+      height: auto;
+      margin: 10px auto; }
+  .catalog-category-view .col-md-12 .page-container .content-img .arrow-right {
+    width: 30px;
+    height: 30px;
+    background: url(/media/arrow-left.svg) no-repeat 35% 50%;
+    color: transparent;
+    top: 40px;
+    position: relative; }
+  .catalog-category-view .col-md-12 .page-container .content-img .arrow-left {
+    width: 30px;
+    height: 30px;
+    background: url(/media/arrow-right.svg) no-repeat 35% 50%;
+    color: transparent;
+    top: 40px;
+    position: relative; }
 .catalog-category-view .col-md-12 .page-container .info-prod h1 {
   font-family: 'NescafeSans-Bold';
   font-size: 15pt;
@@ -581,7 +651,8 @@ header .header3 {
   position: relative;
   text-align: left;
   top: -30px;
-  right: 140px; }
+  right: 140px;
+  color: #737373; }
 .catalog-category-view .col-md-12 .page-container .info-prod .price {
   list-style: none;
   padding: 0px;
@@ -601,13 +672,39 @@ header .header3 {
 .catalog-category-view .col-md-12 .page-container .info-prod .stock {
   color: #00913d; }
 .catalog-category-view .col-md-12 .page-container .info-prod .quantity {
-  width: 80%;
+  width: 40%;
   padding: 20px 0; }
+  .catalog-category-view .col-md-12 .page-container .info-prod .quantity .less {
+    border: 2px solid #e1261c;
+    height: 34px;
+    width: 38px;
+    border-radius: 6px 0 0 6px;
+    text-align: center;
+    color: #737373;
+    position: relative;
+    float: left;
+    left: 2px;
+    font-size: 14pt; }
+  .catalog-category-view .col-md-12 .page-container .info-prod .quantity .add {
+    border: 2px solid #e1261c;
+    height: 34px;
+    width: 38px;
+    border-radius: 0px 6px 6px 0px;
+    text-align: center;
+    color: #737373;
+    position: relative;
+    float: right;
+    right: 114px;
+    font-size: 14pt; }
   .catalog-category-view .col-md-12 .page-container .info-prod .quantity input {
     border: 2px solid #e1261c;
     height: 34px;
-    border-radius: 6px;
-    text-align: center; }
+    width: 50px;
+    border-radius: 0px;
+    text-align: center;
+    color: #737373; }
+    .catalog-category-view .col-md-12 .page-container .info-prod .quantity input:focus {
+      outline: 0px; }
 .catalog-category-view .col-md-12 .page-container .info-prod button {
   background: #ff1703;
   box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
@@ -617,9 +714,25 @@ header .header3 {
   border: none;
   width: 150px;
   height: 38px;
-  font-size: 1em; }
+  font-size: 1em;
+  position: relative;
+  top: 17px;
+  right: 120px;
+  float: right; }
   .catalog-category-view .col-md-12 .page-container .info-prod button:hover {
     background: #000000; }
+.catalog-category-view .col-md-12 .page-container .info-prod hr {
+  border-top: 1px solid #bfbfbf;
+  width: 85%;
+  float: left;
+  clear: both; }
+.catalog-category-view .col-md-12 .page-container .info-prod .more h3 {
+  font-size: 12pt;
+  font-weight: 500;
+  color: #737373; }
+.catalog-category-view .col-md-12 .page-container .info-prod .more .fisrt, .catalog-category-view .col-md-12 .page-container .info-prod .more .second {
+  font-size: 10pt;
+  color: #737373; }
 
 @font-face {
   font-family: 'NescafeSans-Bold';

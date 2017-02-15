@@ -13,8 +13,46 @@
                 @include page-title-xs
             }
             ol{
+                float: left;
+                width:75%;
                 list-style: none;
+                li{
+                    .step-title{
+                        clear: both;
+                        width: 100%;
+                        display: block;
+                        height: 40px;
+                        .number{
+                            float: left;
+                            padding: 1px 6px;
+                            display: block;
+                            background: #e1261c;
+                            color: #FFF;
+                            border-radius: 3px;
+                            font-size: 9pt;
+                            margin-top: -1px;
+                        }
+                        h2.panel-title{
+                            float: left;
+                            padding: 0 10px;
+                            display: block;
+                        }
+                        a{
+                            float: right;
+                            width: 15%;
+                            text-align: right;
+                            display: block;
+                            color: #999;
+                            font-size: 9pt;
+                        }
+                    }
+                }
             }
+        }
+        
+        .col-right.sidebar{
+            width: 23%;
+            float: right;
         }
     }
 }
