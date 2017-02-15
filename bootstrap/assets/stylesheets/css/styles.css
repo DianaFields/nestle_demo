@@ -533,7 +533,6 @@ header .header3 {
   padding-left: 15px;
   padding-right: 15px; }
   .main-container .main {
-    font-family: 'NescafeSans-Bold', Arial;
     font-size: 14px;
     padding: 10px; }
     .main-container .main .col-main .page-title {
@@ -561,7 +560,8 @@ header .header3 {
         clear: both;
         width: 100%;
         display: block;
-        height: 40px; }
+        height: 40px;
+        font-family: 'NescafeSans-Bold', Arial; }
         .main-container .main .col-main ol li .step-title .number {
           float: left;
           padding: 1px 6px;
@@ -582,9 +582,63 @@ header .header3 {
           display: block;
           color: #999;
           font-size: 9pt; }
+      .main-container .main .col-main ol li .panel-collapse form .fieldset p.required {
+        color: red;
+        text-align: right;
+        font-size: 10px; }
+      .main-container .main .col-main ol li .panel-collapse form .fieldset .form-list, .main-container .main .col-main ol li .panel-collapse form .fieldset ul {
+        list-style: none; }
+        .main-container .main .col-main ol li .panel-collapse form .fieldset .form-list li, .main-container .main .col-main ol li .panel-collapse form .fieldset ul li {
+          padding: 10px 0; }
+          .main-container .main .col-main ol li .panel-collapse form .fieldset .form-list li .input-box .address-select, .main-container .main .col-main ol li .panel-collapse form .fieldset ul li .input-box .address-select {
+            width: 80%; }
+          .main-container .main .col-main ol li .panel-collapse form .fieldset .form-list li .input-box select, .main-container .main .col-main ol li .panel-collapse form .fieldset .form-list li .input-box input, .main-container .main .col-main ol li .panel-collapse form .fieldset ul li .input-box select, .main-container .main .col-main ol li .panel-collapse form .fieldset ul li .input-box input {
+            width: 45%;
+            height: 30px;
+            border: 1px solid red;
+            background: #FFF;
+            border-radius: 4px;
+            padding: 3px; }
+          .main-container .main .col-main ol li .panel-collapse form .fieldset .form-list li div .field, .main-container .main .col-main ol li .panel-collapse form .fieldset ul li div .field {
+            margin-bottom: 10px; }
+        .main-container .main .col-main ol li .panel-collapse form .fieldset .form-list .control, .main-container .main .col-main ol li .panel-collapse form .fieldset ul .control {
+          width: 45%;
+          background: #f5f5f5;
+          border-radius: 4px; }
+          .main-container .main .col-main ol li .panel-collapse form .fieldset .form-list .control input, .main-container .main .col-main ol li .panel-collapse form .fieldset ul .control input {
+            width: 10%;
+            float: left;
+            margin-left: 15px; }
+      .main-container .main .col-main ol li .panel-collapse form .fieldset .buttons-set {
+        padding: 10px 40px; }
+        .main-container .main .col-main ol li .panel-collapse form .fieldset .buttons-set .button {
+          background: #ff1703;
+          box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+          transition: all 500ms ease;
+          border-radius: 8px;
+          color: #fff;
+          border: none;
+          width: 150px;
+          height: 38px;
+          font-size: 1em; }
+          .main-container .main .col-main ol li .panel-collapse form .fieldset .buttons-set .button:hover {
+            background: #000000; }
+        .main-container .main .col-main ol li .panel-collapse form .fieldset .buttons-set .please-wait {
+          padding: 0 30px; }
     .main-container .main .col-right.sidebar {
       width: 23%;
-      float: right; }
+      float: right;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      background-color: #f5f5f5; }
+      .main-container .main .col-right.sidebar #checkout-progress-wrapper .block-progress .block-title {
+        color: #e1261c;
+        font-family: 'NescafeSans-Bold', Arial; }
+      .main-container .main .col-right.sidebar #checkout-progress-wrapper .block-progress .block-content {
+        color: #999;
+        font-size: 14px;
+        margin-top: 5px; }
 
 .catalog-category-view .col-md-12 .page-container .breadcrumb {
   background: none; }
