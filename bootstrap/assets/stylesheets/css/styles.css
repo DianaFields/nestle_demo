@@ -231,10 +231,6 @@ header .header3 {
             position: relative;
             top: 3px; }
 
-<<<<<<< HEAD
-.border-hover:hover {
-  border: 1px solid #999; }
-=======
 .dropdown-submenu {
   position: relative; }
 
@@ -311,7 +307,9 @@ footer .enlaces {
     padding: 30px 0; }
     footer .enlaces .links a {
       color: white; }
->>>>>>> moni
+
+.border-hover:hover {
+  border: 1px solid #999; }
 
 .solutionsTop {
   width: 100%; }
